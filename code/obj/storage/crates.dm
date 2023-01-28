@@ -638,6 +638,25 @@
 		/obj/item/clothing/suit/space/syndicate/specialist/bard,
 		/obj/item/clothing/head/helmet/space/syndicate/specialist/bard)
 
+	pirate
+		icon = 'icons/obj/large/32x48.dmi'
+		icon_state = "chest"
+		icon_opened = "chest-open"
+		icon_closed = "chest"
+
+		musketeer
+			name = "Class Chest - Musketeer"
+			desc = "A chest containing a Pirate Musketeer loadout."
+			spawn_contents = list(/obj/item/gun/kinetic/single_action/flintlock/rifle,
+			/obj/item/storage/backpack/satchel/flintlock_satchel)
+
+		buccaneer
+			name = "Class Chest - Buccaneer"
+			desc = "A chest containing a Pirate Buccaneer loadout."
+			spawn_contents = list(/obj/item/gun/kinetic/single_action/flintlock,
+			/obj/item/gun/kinetic/single_action/flintlock,
+			/obj/item/ammo/bullets/flintlock)
+
 	qm //Hi Gannets, I like your crate and wanted to use it for some QM stuff. Come yell at Azungar if this is not ok.
 		name = "Weapons crate"
 		desc = "Just a fancy crate that may or may not contain weapons."

@@ -211,6 +211,26 @@
 		STOP_TRACKING_CAT(TR_CAT_NUKE_OP_STYLE)
 		..()
 
+/obj/submachine/weapon_vendor/pirate
+	name = "Pirate Weapons Vendor"
+	icon = 'icons/obj/vending.dmi'
+	icon_state = "weapon"
+	desc = "An automated quartermaster service for supplying your pirate crew with weapons and gear."
+	token_accepted = /obj/item/requisition_token/pirate
+	log_purchase = TRUE
+
+	ex_act()
+		return
+
+	New()
+		materiel_stock += new/datum/materiel/loadout/musketeer
+		materiel_stock += new/datum/materiel/loadout/buccaneer
+		..()
+
+	accepted_token()
+		src.credits[WEAPON_VENDOR_CATEGORY_LOADOUT]++
+		..()
+
 // Materiel avaliable for purchase:
 
 /datum/materiel
@@ -489,6 +509,19 @@
 	name = "Sawfly pouch"
 	path = /obj/item/storage/sawfly_pouch
 	description = "A pouch of 3 reusable anti-personnel drones."
+
+// PIRATE
+
+/datum/materiel/loadout/musketeer
+	name = "Musketeer"
+	path = /obj/storage/crate/classcrate/pirate/musketeer
+	description = "Flintlock rifle and 15 rounds of ammunition provided in a specialised satchel."
+
+/datum/materiel/loadout/buccaneer
+	name = "Buccaneer"
+	path = /obj/storage/crate/classcrate/pirate/buccaneer
+	description = "A set of two flintlock pistols and 15 rounds of ammunition."
+
 // Requisition tokens
 
 /obj/item/requisition_token
@@ -518,6 +551,11 @@
 		utility
 			desc = "An NT-provided token that entitles the owner to one additional utility purchase."
 			icon_state = "req-token-secass"
+
+	pirate
+		name = "doubloon"
+		desc = "A finely stamped gold coin compatible with the Pirate Weapons Vendor."
+		icon_state = "req-token"
 
 #undef WEAPON_VENDOR_CATEGORY_SIDEARM
 #undef WEAPON_VENDOR_CATEGORY_LOADOUT

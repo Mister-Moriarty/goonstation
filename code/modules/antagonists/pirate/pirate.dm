@@ -42,7 +42,8 @@
 		H.equip_if_possible(new /obj/item/storage/backpack(H), H.slot_back)
 		H.equip_if_possible(new /obj/item/reagent_containers/food/drinks/flask/pirate(H), H.slot_in_backpack)
 		H.equip_if_possible(new /obj/item/clothing/glasses/eyepatch/pirate(H), H.slot_glasses)
-		H.equip_if_possible(new /obj/item/tank/emergency_oxygen/extended(H), H.slot_r_store)
+		H.equip_if_possible(new /obj/item/requisition_token/pirate(H), H.slot_r_store)
+		H.equip_if_possible(new /obj/item/tank/emergency_oxygen/extended(H), H.slot_l_store)
 		H.equip_if_possible(new /obj/item/swords_sheaths/pirate(H), H.slot_belt)
 
 		H.equip_sensory_items()
