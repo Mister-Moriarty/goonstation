@@ -3,7 +3,9 @@
 	var/mob/body = null
 	var/isghost = 0 //Should contain a string of the original ghosts real_name
 	var/escape_vr = 0
-
+	
+	start_speech_modifiers = list(SPEECH_MODIFIER_BRAIN_DAMAGE, SPEECH_MODIFIER_BREATH, SPEECH_MODIFIER_VIRTUAL_REALITY)
+	start_listen_inputs = list(LISTEN_INPUT_EARS)
 	start_speech_outputs = list(SPEECH_OUTPUT_DEADCHAT, SPEECH_OUTPUT_EQUIPPED)
 	default_speech_output_channel = SAY_CHANNEL_DEAD
 

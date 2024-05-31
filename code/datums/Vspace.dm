@@ -212,6 +212,11 @@ datum/v_space
 			virtual_character.real_name = "Virtual [user.real_name]"
 		user.mind.virtual = virtual_character
 		user.mind.transfer_to(virtual_character)
+		// We do this here because transfer_to overwrites the say_tree
+		if (!virtual_character.isghost)
+			virtual_character.ensure_say_tree().AddOutput(SPEECH_OUTPUT_SPOKEN)
+			virtual_character.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_DEADCHAT)
+			virtual_character.default_speech_output_channel = SAY_CHANNEL_OUTLOUD
 		SPAWN(0.8 SECONDS)
 			if (virtual_character)
 				virtual_character.update_face()
