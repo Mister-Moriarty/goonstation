@@ -16,7 +16,6 @@
 		sound_fart = 'sound/voice/virtual_gassy.ogg'
 		sound_snap = 'sound/voice/virtual_snap.ogg'
 		sound_fingersnap = 'sound/voice/virtual_snap.ogg'
-		// We do this here because transfer_to overwrites the say_tree
 		if (!is_ghost)
 			src.ensure_say_tree().AddOutput(SPEECH_OUTPUT_SPOKEN)
 			src.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_DEADCHAT)
