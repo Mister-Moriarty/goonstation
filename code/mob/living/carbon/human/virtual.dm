@@ -8,7 +8,7 @@
 	start_speech_outputs = list(SPEECH_OUTPUT_DEADCHAT, SPEECH_OUTPUT_EQUIPPED)
 	default_speech_output_channel = SAY_CHANNEL_DEAD
 
-	New(var/turf/T, var/is_ghost)
+	New(newLoc, is_ghost)
 		..()
 		sound_burp = 'sound/voice/virtual_gassy.ogg'
 		//sound_malescream = 'sound/voice/virtual_scream.ogg'
