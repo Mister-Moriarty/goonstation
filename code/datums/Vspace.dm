@@ -178,7 +178,9 @@ datum/v_space
 
 	proc/create_Vcharacter(var/mob/user, var/network_device, var/network, turf/B)
 		var/mob/living/carbon/human/virtual/virtual_character
-
+		var/ghost_name = 0
+		if(isobserver(user) && !isAIeye(user))
+			ghost_name = user.real_name
 		if (inactive_bodies.len)
 			virtual_character = inactive_bodies[1]
 			inactive_bodies -= virtual_character
@@ -187,7 +189,7 @@ datum/v_space
 				inactive_bodies -= virtual_character
 			virtual_character.full_heal()
 		else
-			virtual_character = new(B)
+			virtual_character = new(B, ghost_name)
 
 		virtual_character.network_device = network_device
 		virtual_character.body = user
@@ -212,11 +214,6 @@ datum/v_space
 			virtual_character.real_name = "Virtual [user.real_name]"
 		user.mind.virtual = virtual_character
 		user.mind.transfer_to(virtual_character)
-		// We do this here because transfer_to overwrites the say_tree
-		if (!virtual_character.isghost)
-			virtual_character.ensure_say_tree().AddOutput(SPEECH_OUTPUT_SPOKEN)
-			virtual_character.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_DEADCHAT)
-			virtual_character.default_speech_output_channel = SAY_CHANNEL_OUTLOUD
 		SPAWN(0.8 SECONDS)
 			if (virtual_character)
 				virtual_character.update_face()
