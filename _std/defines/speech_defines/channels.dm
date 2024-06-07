@@ -17,7 +17,7 @@
 		} \
 	}
 
-/// Set up an associative list of heard turfs within a range in the form `list[turf] = TRUE`, filting out turfs already present in a second list.
+/// Set up an associative list of heard turfs within a range in the form `list[turf] = TRUE`, filtering out turfs already present in a second list.
 #define SET_UP_HEARD_DISTORTED_TURFS(LIST, RANGE, CENTRE, HEARD_LIST) \
 	var/list/atom/LIST = list(); \
 	for (var/turf/T in view(RANGE, CENTRE)) { \
