@@ -9,7 +9,7 @@
 
 
 /**
- *	Outermost listener trackers are responsible for handling the logic used to track an atoms outermost listener. They are typically
+ *	Outermost listener trackers are responsible for handling the logic used to track an atom's outermost listener. They are typically
  *	only required for atoms that speak or listen to a local delimited say channel.
  */
 /datum/outermost_listener_tracker
