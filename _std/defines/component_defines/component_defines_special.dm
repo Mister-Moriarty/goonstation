@@ -151,7 +151,7 @@
 #define COMSIG_MOB_SCOPE_MOVED "sniper_scope_toggled"
 
 // ---- Speech System ----
-/// When a speech module tree has its speaker origin migrated to a new atom. (speech tree, old_speaker_origin, new_speaker_origin)
-#define COMSIG_SPEAKER_ORIGIN_MIGRATED "speaker_origin_migrated"
-/// When a listen module tree has its listener origin migrated to a new atom. (listen tree, old_listener_origin, new_listener_origin)
-#define COMSIG_LISTENER_ORIGIN_MIGRATED "listener_origin_migrated"
+/// When a speech module tree's speaker origin is updated. (speech tree, old_speaker_origin, new_speaker_origin)
+#define COMSIG_SPEAKER_ORIGIN_UPDATED "speaker_origin_updated"
+/// When a listen module tree's listener origin is updated. (listen tree, old_listener_origin, new_listener_origin)
+#define COMSIG_LISTENER_ORIGIN_UPDATED "listener_origin_updated"

@@ -86,12 +86,12 @@
 	if (!suppress_speech_bubble)
 		message.process_speech_bubble()
 
-/// Migrate the speaker origin to a different atom. This will cause spoken messages to appear to originate fom the new speaker origin.
-/datum/speech_module_tree/proc/migrate_speaker_origin(atom/new_origin)
+/// Update this speech module tree's speaker origin. This will cause spoken messages to appear to originate fom the new speaker origin.
+/datum/speech_module_tree/proc/update_speaker_origin(atom/new_origin)
 	var/atom/old_origin = src.speaker_origin
 	src.speaker_origin = new_origin
 
-	SEND_SIGNAL(src, COMSIG_SPEAKER_ORIGIN_MIGRATED, old_origin, new_origin)
+	SEND_SIGNAL(src, COMSIG_SPEAKER_ORIGIN_UPDATED, old_origin, new_origin)
 
 /// Adds a new output module to the tree. Returns a reference to the new output module on success.
 /datum/speech_module_tree/proc/AddOutput(output_id, count = 1)

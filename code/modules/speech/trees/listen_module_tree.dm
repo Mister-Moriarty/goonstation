@@ -91,12 +91,12 @@
 		mob_listener.playsound_local_not_inworld(message.hear_sound, 55, 0.01, flags = SOUND_IGNORE_SPACE)
 
 
-/// Migrate the listener origin to a different atom. This will cause parent to hear messages from the location of the new listener origin.
-/datum/listen_module_tree/proc/migrate_listener_origin(atom/new_origin)
+/// Update this listen module tree's listener origin. This will cause parent to hear messages from the location of the new listener origin.
+/datum/listen_module_tree/proc/update_listener_origin(atom/new_origin)
 	var/atom/old_origin = src.listener_origin
 	src.listener_origin = new_origin
 
-	SEND_SIGNAL(src, COMSIG_LISTENER_ORIGIN_MIGRATED, old_origin, new_origin)
+	SEND_SIGNAL(src, COMSIG_LISTENER_ORIGIN_UPDATED, old_origin, new_origin)
 
 /// Adds a new input module to the tree. Returns a reference to the new input module on success.
 /datum/listen_module_tree/proc/AddInput(input_id, count = 1)
