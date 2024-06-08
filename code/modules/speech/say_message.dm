@@ -282,8 +282,8 @@ var/regex/forbidden_character_regex = regex(@"[\u2028\u202a\u202b\u202c\u202d\u2
 				speech_bubble_icon = "[number]"
 
 	speech_bubble_icon ||= src.speaker.speech_bubble_icon_say
-	src.speaker.speech_bubble.icon_state = speech_bubble_icon
-	src.speaker.show_speech_bubble()
+	src.message_origin.speech_bubble.icon_state = speech_bubble_icon
+	src.message_origin.show_speech_bubble()
 
 /// Returns a formatted message for use with `boutput()`, using either the last input listen module or falling back to the default format of `"[speaker] [say_verb], [content]"`.
 /datum/say_message/proc/format_for_output()
