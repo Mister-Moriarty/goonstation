@@ -149,3 +149,9 @@
 #define COMSIG_SCOPE_TOGGLED "sniper_scope_toggled"
 /// Sent to a mob when its client pixel offset is changed by a scope (delta_x, delta_y)
 #define COMSIG_MOB_SCOPE_MOVED "sniper_scope_toggled"
+
+// ---- Speech System ----
+/// When a speech module tree has its speaker origin migrated to a new atom. (speech tree, old_speaker_origin, new_speaker_origin)
+#define COMSIG_SPEECH_TREE_MIGRATED "speech_module_tree_migrated"
+/// When a listen module tree has its listener origin migrated to a new atom. (listen tree, old_listener_origin, new_listener_origin)
+#define COMSIG_LISTEN_TREE_MIGRATED "listen_module_tree_migrated"
