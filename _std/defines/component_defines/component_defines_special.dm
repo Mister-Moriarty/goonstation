@@ -152,6 +152,6 @@
 
 // ---- Speech System ----
 /// When a speech module tree has its speaker origin migrated to a new atom. (speech tree, old_speaker_origin, new_speaker_origin)
-#define COMSIG_SPEECH_TREE_MIGRATED "speech_module_tree_migrated"
+#define COMSIG_SPEAKER_ORIGIN_MIGRATED "speaker_origin_migrated"
 /// When a listen module tree has its listener origin migrated to a new atom. (listen tree, old_listener_origin, new_listener_origin)
-#define COMSIG_LISTEN_TREE_MIGRATED "listen_module_tree_migrated"
+#define COMSIG_LISTENER_ORIGIN_MIGRATED "listener_origin_migrated"

@@ -212,12 +212,12 @@ ABSTRACT_TYPE(/datum/say_channel/delimited/local)
 
 	if (src.track_outermost_listener)
 		registree.parent_tree.speaker_origin.ensure_outermost_listener_tracker().request_track()
-		src.RegisterSignal(registree.parent_tree, COMSIG_SPEECH_TREE_MIGRATED, PROC_REF(rerequest_track))
+		src.RegisterSignal(registree.parent_tree, COMSIG_SPEAKER_ORIGIN_MIGRATED, PROC_REF(rerequest_track))
 
 /datum/say_channel/delimited/local/UnregisterOutput(datum/speech_module/output/registered)
 	if (src.track_outermost_listener)
 		registered.parent_tree.speaker_origin.ensure_outermost_listener_tracker().unrequest_track()
-		src.UnregisterSignal(registered.parent_tree, COMSIG_SPEECH_TREE_MIGRATED)
+		src.UnregisterSignal(registered.parent_tree, COMSIG_SPEAKER_ORIGIN_MIGRATED)
 
 	. = ..()
 
@@ -226,12 +226,12 @@ ABSTRACT_TYPE(/datum/say_channel/delimited/local)
 
 	if (src.track_outermost_listener)
 		registree.parent_tree.listener_origin.ensure_outermost_listener_tracker().request_track()
-		src.RegisterSignal(registree.parent_tree, COMSIG_LISTEN_TREE_MIGRATED, PROC_REF(rerequest_track))
+		src.RegisterSignal(registree.parent_tree, COMSIG_LISTENER_ORIGIN_MIGRATED, PROC_REF(rerequest_track))
 
 /datum/say_channel/delimited/local/UnregisterInput(datum/listen_module/input/registered)
 	if (src.track_outermost_listener)
 		registered.parent_tree.listener_origin.ensure_outermost_listener_tracker().unrequest_track()
-		src.UnregisterSignal(registered.parent_tree, COMSIG_LISTEN_TREE_MIGRATED)
+		src.UnregisterSignal(registered.parent_tree, COMSIG_LISTENER_ORIGIN_MIGRATED)
 
 	. = ..()
 

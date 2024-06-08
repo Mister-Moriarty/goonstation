@@ -91,7 +91,7 @@
 	var/atom/old_origin = src.speaker_origin
 	src.speaker_origin = new_origin
 
-	SEND_SIGNAL(src, COMSIG_SPEECH_TREE_MIGRATED, old_origin, new_origin)
+	SEND_SIGNAL(src, COMSIG_SPEAKER_ORIGIN_MIGRATED, old_origin, new_origin)
 
 /// Adds a new output module to the tree. Returns a reference to the new output module on success.
 /datum/speech_module_tree/proc/AddOutput(output_id, count = 1)

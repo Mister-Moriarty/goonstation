@@ -96,7 +96,7 @@
 	var/atom/old_origin = src.listener_origin
 	src.listener_origin = new_origin
 
-	SEND_SIGNAL(src, COMSIG_LISTEN_TREE_MIGRATED, old_origin, new_origin)
+	SEND_SIGNAL(src, COMSIG_LISTENER_ORIGIN_MIGRATED, old_origin, new_origin)
 
 /// Adds a new input module to the tree. Returns a reference to the new input module on success.
 /datum/listen_module_tree/proc/AddInput(input_id, count = 1)
