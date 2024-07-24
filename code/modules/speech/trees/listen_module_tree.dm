@@ -12,7 +12,7 @@
 	var/list/atom/secondary_parents
 	/// A list of all auxiliary listen module trees with this listen module tree registered as a target.
 	var/list/datum/listen_module_tree/auxiliary/auxiliary_trees
-	/// A temporary buffer of all received messages that are to be processed when the buffer is flushed.
+	/// A temporary buffer of all received messages that are to be outputted to the parent when the buffer is flushed.
 	var/list/datum/say_message/message_buffer
 	/// An associative list of all signal recipients that may cause the message buffer to flush.
 	var/list/datum/signal_recipients
