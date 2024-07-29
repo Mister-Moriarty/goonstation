@@ -39,13 +39,13 @@
 	src.output_modules_by_id = list()
 	src.output_modules_by_channel = list()
 	for (var/output_id in outputs)
-		src.AddOutput(output_id)
+		src.AddSpeechOutput(output_id)
 
 	src.speech_modifier_ids_with_subcount = list()
 	src.speech_modifiers_by_id = list()
 	src.persistent_speech_modifiers_by_id = list()
 	for (var/modifier_id in modifiers)
-		src.AddModifier(modifier_id)
+		src.AddSpeechModifier(modifier_id)
 
 /datum/speech_module_tree/disposing()
 	for (var/datum/speech_module_tree/auxiliary/auxiliary_tree as anything in src.auxiliary_trees)
@@ -177,7 +177,7 @@
 	SEND_SIGNAL(src, COMSIG_SPEAKER_ORIGIN_UPDATED, old_origin, new_origin)
 
 /// Adds a new output module to the tree. Returns a reference to the new output module on success.
-/datum/speech_module_tree/proc/_AddOutput(output_id, list/arguments = list(), count = 1)
+/datum/speech_module_tree/proc/_AddSpeechOutput(output_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/speech_module/output)
 
 	var/module_id = "[output_id][arguments["subchannel"]]"
@@ -197,7 +197,7 @@
 	return new_output
 
 /// Removes an output module from the tree. Returns TRUE on success, FALSE on failure.
-/datum/speech_module_tree/proc/RemoveOutput(output_id, subchannel, count = 1)
+/datum/speech_module_tree/proc/RemoveSpeechOutput(output_id, subchannel, count = 1)
 	var/module_id = "[output_id][subchannel]"
 	if (!src.output_modules_by_id[module_id])
 		return FALSE
@@ -221,7 +221,7 @@
 	return src.output_modules_by_channel[channel_id]
 
 /// Adds a new modifier module to the tree. Returns a reference to the new modifier module on success.
-/datum/speech_module_tree/proc/_AddModifier(modifier_id, list/arguments = list(), count = 1)
+/datum/speech_module_tree/proc/_AddSpeechModifier(modifier_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/speech_module/modifier)
 
 	src.speech_modifier_ids_with_subcount[modifier_id] += count
@@ -243,7 +243,7 @@
 	return new_modifier
 
 /// Removes a modifier from the tree. Returns TRUE on success, FALSE on failure.
-/datum/speech_module_tree/proc/RemoveModifier(modifier_id, count = 1)
+/datum/speech_module_tree/proc/RemoveSpeechModifier(modifier_id, count = 1)
 	if (!src.speech_modifiers_by_id[modifier_id])
 		return FALSE
 

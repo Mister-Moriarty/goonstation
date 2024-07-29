@@ -336,8 +336,8 @@ proc/get_default_flock()
 		return
 
 	src.flockmind = F
-	src.flockmind.ensure_say_tree().AddOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
-	src.flockmind.ensure_listen_tree().AddInput(LISTEN_INPUT_FLOCKMIND, subchannel = "\ref[src]")
+	src.flockmind.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
+	src.flockmind.ensure_listen_tree().AddListenInput(LISTEN_INPUT_FLOCKMIND, subchannel = "\ref[src]")
 
 //since flocktraces need to be given their flock in New this is useful for debug
 /datum/flock/proc/spawnTrace()
@@ -349,8 +349,8 @@ proc/get_default_flock()
 		return
 	src.traces |= T
 	src.update_computes(TRUE)
-	T.ensure_say_tree().AddOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
-	T.ensure_listen_tree().AddInput(LISTEN_INPUT_FLOCK, subchannel = "\ref[src]")
+	T.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
+	T.ensure_listen_tree().AddListenInput(LISTEN_INPUT_FLOCK, subchannel = "\ref[src]")
 
 /datum/flock/proc/removeTrace(mob/living/intangible/flock/trace/T)
 	if(!T)
@@ -359,8 +359,8 @@ proc/get_default_flock()
 	src.active_names -= T.real_name
 	hideAnnotations(T)
 	src.update_computes(TRUE)
-	T.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]")
-	T.ensure_listen_tree().RemoveInput(LISTEN_INPUT_FLOCK, subchannel = "\ref[src]")
+	T.ensure_say_tree().RemoveSpeechOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]")
+	T.ensure_listen_tree().RemoveListenInput(LISTEN_INPUT_FLOCK, subchannel = "\ref[src]")
 
 /datum/flock/proc/ping(var/atom/target, var/mob/living/intangible/flock/pinger)
 	//awful typecheck because turfs and movables have vis_contents defined seperately because god hates us
@@ -549,7 +549,7 @@ proc/get_default_flock()
 			src.total_compute += comp_provided
 		src.update_computes()
 
-	D.ensure_say_tree().AddOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
+	D.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]", flock = src)
 
 /datum/flock/proc/removeDrone(mob/living/critter/flock/D)
 	if(!isflockmob(D))
@@ -571,7 +571,7 @@ proc/get_default_flock()
 		src.update_computes()
 
 	D.flock = null
-	D.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]")
+	D.ensure_say_tree().RemoveSpeechOutput(SPEECH_OUTPUT_FLOCK, subchannel = "\ref[src]")
 
 // TRACES
 
@@ -610,7 +610,7 @@ proc/get_default_flock()
 			src.total_compute += comp_provided
 		src.update_computes()
 
-	S.ensure_say_tree().AddOutput(SPEECH_OUTPUT_FLOCK_SYSTEM, subchannel = "\ref[src]", flock = src)
+	S.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_FLOCK_SYSTEM, subchannel = "\ref[src]", flock = src)
 
 /datum/flock/proc/removeStructure(obj/flock_structure/S)
 	if(!isflockstructure(S))
@@ -627,7 +627,7 @@ proc/get_default_flock()
 			src.total_compute -= comp_provided
 		src.update_computes()
 
-	S.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_FLOCK_SYSTEM, subchannel = "\ref[src]")
+	S.ensure_say_tree().RemoveSpeechOutput(SPEECH_OUTPUT_FLOCK_SYSTEM, subchannel = "\ref[src]")
 
 /datum/flock/proc/getComplexDroneCount()
 	if (!src.units)

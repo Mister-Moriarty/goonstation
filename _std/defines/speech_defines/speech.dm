@@ -1,10 +1,12 @@
 //------------- WRAPPERS -------------//
-/// A wrapper for _AddOutput that permits the usage of named arguments.
-#define AddOutput(output_id, arguments...) _AddOutput(output_id, list(##arguments))
-/// A wrapper for _AddInput that permits the usage of named arguments.
-#define AddInput(input_id, arguments...) _AddInput(input_id, list(##arguments))
-/// A wrapper for _AddModifier that permits the usage of named arguments. This caters to both speech and listen trees.
-#define AddModifier(modifier_id, arguments...) _AddModifier(modifier_id, list(##arguments))
+/// A wrapper for _AddSpeechOutput that permits the usage of named arguments.
+#define AddSpeechOutput(output_id, arguments...) _AddSpeechOutput(output_id, list(##arguments))
+/// A wrapper for _AddSpeechModifier that permits the usage of named arguments.
+#define AddSpeechModifier(modifier_id, arguments...) _AddSpeechModifier(modifier_id, list(##arguments))
+/// A wrapper for _AddListenInput that permits the usage of named arguments.
+#define AddListenInput(input_id, arguments...) _AddListenInput(input_id, list(##arguments))
+/// A wrapper for _AddListenModifier that permits the usage of named arguments.
+#define AddListenModifier(modifier_id, arguments...) _AddListenModifier(modifier_id, list(##arguments))
 
 
 //------------- COOLDOWNS -------------//

@@ -29,8 +29,8 @@
 
 		hivemind_observer.set_owner(master_ability_holder)
 
-		src.owner.current.ensure_say_tree().AddOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[master_ability_holder]")
-		src.owner.current.ensure_listen_tree().AddInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[master_ability_holder]")
+		src.owner.current.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[master_ability_holder]")
+		src.owner.current.ensure_listen_tree().AddListenInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[master_ability_holder]")
 		src.owner.current.default_speech_output_channel = SAY_CHANNEL_HIVEMIND
 
 	remove_equipment()

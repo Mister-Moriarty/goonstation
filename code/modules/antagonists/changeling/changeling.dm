@@ -45,8 +45,8 @@
 		src.ability_holder.addAbility(/datum/targetable/changeling/boot)
 		src.ability_holder.addAbility(/datum/targetable/changeling/give_control)
 
-		src.owner.current.ensure_say_tree().AddOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[src.ability_holder]")
-		src.owner.current.ensure_listen_tree().AddInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[src.ability_holder]")
+		src.owner.current.ensure_say_tree().AddSpeechOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[src.ability_holder]")
+		src.owner.current.ensure_listen_tree().AddListenInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[src.ability_holder]")
 
 		if(istype(src.owner.current, /mob/living))
 			var/mob/living/L = src.owner.current
@@ -83,8 +83,8 @@
 		src.ability_holder.removeAbility(/datum/targetable/changeling/give_control)
 		src.owner.current.remove_ability_holder(/datum/abilityHolder/changeling)
 
-		src.owner.current.ensure_say_tree().RemoveOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[src.ability_holder]")
-		src.owner.current.ensure_listen_tree().RemoveInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[src.ability_holder]")
+		src.owner.current.ensure_say_tree().RemoveSpeechOutput(SPEECH_OUTPUT_HIVECHAT_MEMBER, subchannel = "\ref[src.ability_holder]")
+		src.owner.current.ensure_listen_tree().RemoveListenInput(LISTEN_INPUT_HIVECHAT, subchannel = "\ref[src.ability_holder]")
 
 		if(istype(src.owner.current, /mob/living))
 			var/mob/living/L = src.owner.current

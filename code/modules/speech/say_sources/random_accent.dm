@@ -13,6 +13,6 @@ var/atom/movable/abstract_say_source/random_accent/random_accent_source = new()
 	src.ensure_say_tree()
 
 	while (prob(5))
-		src.say_tree.AddModifier(global.random_accent().id)
+		src.say_tree.AddSpeechModifier(global.random_accent().id)
 
 	return src.say(message, flags = SAYFLAG_DO_NOT_OUTPUT)

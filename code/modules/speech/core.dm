@@ -209,15 +209,15 @@ Follow-Up PRs:
 
 	if (src.preferences.listen_ooc)
 		if (src.holder && !src.player_mode)
-			src.listen_tree.AddInput(LISTEN_INPUT_OOC_ADMIN)
+			src.listen_tree.AddListenInput(LISTEN_INPUT_OOC_ADMIN)
 		else
-			src.listen_tree.AddInput(LISTEN_INPUT_OOC)
+			src.listen_tree.AddListenInput(LISTEN_INPUT_OOC)
 
 	else
 		if (src.holder && !src.player_mode)
-			src.listen_tree.RemoveInput(LISTEN_INPUT_OOC_ADMIN)
+			src.listen_tree.RemoveListenInput(LISTEN_INPUT_OOC_ADMIN)
 		else
-			src.listen_tree.RemoveInput(LISTEN_INPUT_OOC)
+			src.listen_tree.RemoveListenInput(LISTEN_INPUT_OOC)
 
 /client/proc/toggle_looc(looc_enabled)
 	if (src.preferences.listen_looc == looc_enabled)
@@ -228,20 +228,20 @@ Follow-Up PRs:
 	if (src.preferences.listen_looc)
 		if (src.holder && !src.player_mode)
 			if (src.only_local_looc)
-				src.listen_tree.AddInput(LISTEN_INPUT_LOOC_ADMIN_LOCAL)
+				src.listen_tree.AddListenInput(LISTEN_INPUT_LOOC_ADMIN_LOCAL)
 			else
-				src.listen_tree.AddInput(LISTEN_INPUT_LOOC_ADMIN_GLOBAL)
+				src.listen_tree.AddListenInput(LISTEN_INPUT_LOOC_ADMIN_GLOBAL)
 		else
-			src.listen_tree.AddInput(LISTEN_INPUT_LOOC)
+			src.listen_tree.AddListenInput(LISTEN_INPUT_LOOC)
 
 	else
 		if (src.holder && !src.player_mode)
 			if (src.only_local_looc)
-				src.listen_tree.RemoveInput(LISTEN_INPUT_LOOC_ADMIN_LOCAL)
+				src.listen_tree.RemoveListenInput(LISTEN_INPUT_LOOC_ADMIN_LOCAL)
 			else
-				src.listen_tree.RemoveInput(LISTEN_INPUT_LOOC_ADMIN_GLOBAL)
+				src.listen_tree.RemoveListenInput(LISTEN_INPUT_LOOC_ADMIN_GLOBAL)
 		else
-			src.listen_tree.RemoveInput(LISTEN_INPUT_LOOC)
+			src.listen_tree.RemoveListenInput(LISTEN_INPUT_LOOC)
 
 /mob/Login()
 	. = ..()

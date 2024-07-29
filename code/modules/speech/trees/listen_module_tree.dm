@@ -52,13 +52,13 @@
 	src.input_modules_by_id = list()
 	src.input_modules_by_channel = list()
 	for (var/input_id in inputs)
-		src.AddInput(input_id)
+		src.AddListenInput(input_id)
 
 	src.listen_modifier_ids_with_subcount = list()
 	src.listen_modifiers_by_id = list()
 	src.persistent_listen_modifiers_by_id = list()
 	for (var/modifier_id in modifiers)
-		src.AddModifier(modifier_id)
+		src.AddListenModifier(modifier_id)
 
 	src.known_language_ids_with_subcount = list()
 	src.known_languages_by_id = list()
@@ -178,7 +178,7 @@
 	SEND_SIGNAL(src, COMSIG_LISTENER_ORIGIN_UPDATED, old_origin, new_origin)
 
 /// Adds a new input module to the tree. Returns a reference to the new input module on success.
-/datum/listen_module_tree/proc/_AddInput(input_id, list/arguments = list(), count = 1)
+/datum/listen_module_tree/proc/_AddListenInput(input_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/listen_module/input)
 
 	var/module_id = "[input_id][arguments["subchannel"]]"
@@ -197,7 +197,7 @@
 	return new_input
 
 /// Removes an input from the tree. Returns TRUE on success, FALSE on failure.
-/datum/listen_module_tree/proc/RemoveInput(input_id, subchannel, count = 1)
+/datum/listen_module_tree/proc/RemoveListenInput(input_id, subchannel, count = 1)
 	var/module_id = "[input_id][subchannel]"
 	if (!src.input_modules_by_id[module_id])
 		return FALSE
@@ -221,7 +221,7 @@
 	return src.input_modules_by_channel[channel_id]
 
 /// Adds a new modifier module to the tree. Returns a reference to the new modifier module on success.
-/datum/listen_module_tree/proc/_AddModifier(modifier_id, list/arguments = list(), count = 1)
+/datum/listen_module_tree/proc/_AddListenModifier(modifier_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/listen_module/modifier)
 
 	src.listen_modifier_ids_with_subcount[modifier_id] += count
@@ -243,7 +243,7 @@
 	return new_modifier
 
 /// Removes a modifier from the tree. Returns TRUE on success, FALSE on failure.
-/datum/listen_module_tree/proc/RemoveModifier(modifier_id, count = 1)
+/datum/listen_module_tree/proc/RemoveListenModifier(modifier_id, count = 1)
 	if (!src.listen_modifiers_by_id[modifier_id])
 		return FALSE
 
