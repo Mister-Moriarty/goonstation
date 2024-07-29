@@ -1,3 +1,12 @@
+//------------- WRAPPERS -------------//
+/// A wrapper for _AddOutput that permits the usage of named arguments.
+#define AddOutput(output_id, arguments...) _AddOutput(output_id, list(##arguments))
+/// A wrapper for _AddInput that permits the usage of named arguments.
+#define AddInput(input_id, arguments...) _AddInput(input_id, list(##arguments))
+/// A wrapper for _AddModifier that permits the usage of named arguments. This caters to both speech and listen trees.
+#define AddModifier(modifier_id, arguments...) _AddModifier(modifier_id, list(##arguments))
+
+
 //------------- COOLDOWNS -------------//
 /// The minimum time between voice sound effects for a single atom. Measured in tenths of a second.
 #define VOICE_SOUND_COOLDOWN 8

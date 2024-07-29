@@ -32,7 +32,7 @@
 	if(mmouse) // mouse in your pocket takes precedence over mhelps
 		var/msg = input("Please enter your whispers to the mouse:") as null|text
 		// provide temp access to speak on this channel if, somehow, we didn't have it before
-		var/channel_access = length(client.mob.ensure_say_tree().GetOutputByChannel(SAY_CHANNEL_MENTOR_MOUSE)) > 0
+		var/channel_access = length(client.mob.ensure_say_tree().GetOutputsByChannel(SAY_CHANNEL_MENTOR_MOUSE)) > 0
 		if (!channel_access)
 			client.mob.ensure_say_tree().AddOutput(SPEECH_OUTPUT_MENTOR_MOUSE)
 			client.mob.ensure_listen_tree().AddInput(LISTEN_INPUT_MENTOR_MOUSE)
