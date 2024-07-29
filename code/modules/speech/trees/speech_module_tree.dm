@@ -180,7 +180,7 @@
 /datum/speech_module_tree/proc/_AddOutput(output_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/speech_module/output)
 
-	var/module_id = "[output_id][(arguments["subchannel"] || "")]"
+	var/module_id = "[output_id][arguments["subchannel"]]"
 	src.output_module_ids_with_subcount[module_id] += count
 	if (src.output_modules_by_id[module_id])
 		return src.output_modules_by_id[module_id]
@@ -197,7 +197,7 @@
 	return new_output
 
 /// Removes an output module from the tree. Returns TRUE on success, FALSE on failure.
-/datum/speech_module_tree/proc/RemoveOutput(output_id, subchannel = "", count = 1)
+/datum/speech_module_tree/proc/RemoveOutput(output_id, subchannel, count = 1)
 	var/module_id = "[output_id][subchannel]"
 	if (!src.output_modules_by_id[module_id])
 		return FALSE
@@ -211,7 +211,7 @@
 	return TRUE
 
 /// Returns the output module that matches the specified ID.
-/datum/speech_module_tree/proc/GetOutputByID(output_id, subchannel = "")
+/datum/speech_module_tree/proc/GetOutputByID(output_id, subchannel)
 	RETURN_TYPE(/datum/speech_module/output)
 	return src.output_modules_by_id["[output_id][subchannel]"]
 

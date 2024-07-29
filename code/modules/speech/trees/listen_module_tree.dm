@@ -181,7 +181,7 @@
 /datum/listen_module_tree/proc/_AddInput(input_id, list/arguments = list(), count = 1)
 	RETURN_TYPE(/datum/listen_module/input)
 
-	var/module_id = "[input_id][(arguments["subchannel"] || "")]"
+	var/module_id = "[input_id][arguments["subchannel"]]"
 	src.input_module_ids_with_subcount[module_id] += count
 	if (src.input_modules_by_id[module_id])
 		return src.input_modules_by_id[module_id]
@@ -197,7 +197,7 @@
 	return new_input
 
 /// Removes an input from the tree. Returns TRUE on success, FALSE on failure.
-/datum/listen_module_tree/proc/RemoveInput(input_id, subchannel = "", count = 1)
+/datum/listen_module_tree/proc/RemoveInput(input_id, subchannel, count = 1)
 	var/module_id = "[input_id][subchannel]"
 	if (!src.input_modules_by_id[module_id])
 		return FALSE
@@ -211,7 +211,7 @@
 	return TRUE
 
 /// Returns the input module that matches the specified ID.
-/datum/listen_module_tree/proc/GetInputByID(input_id, subchannel = "")
+/datum/listen_module_tree/proc/GetInputByID(input_id, subchannel)
 	RETURN_TYPE(/datum/listen_module/input)
 	return src.input_modules_by_id["[input_id][subchannel]"]
 
