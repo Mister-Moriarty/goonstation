@@ -4,11 +4,6 @@
 	var/send_to_global = TRUE
 
 /datum/speech_module/output/spoken/process(datum/say_message/message)
-	if (ismob(message.speaker))
-		var/mob/M = message.speaker
-		if (M.stat != STAT_ALIVE)
-			return
-
 	src.format(message)
 
 	if (isliving(message.speaker))
