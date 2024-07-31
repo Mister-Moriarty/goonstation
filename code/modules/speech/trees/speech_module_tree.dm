@@ -73,6 +73,9 @@
 	for (var/modifier_id in src.speech_modifiers_by_id)
 		qdel(src.speech_modifiers_by_id[modifier_id])
 
+	for (var/prefix_id in src.speech_prefixes_by_id)
+		qdel(src.speech_modifiers_by_id[prefix_id])
+
 	for (var/atom/A as anything in src.secondary_parents)
 		A.say_tree = null
 
