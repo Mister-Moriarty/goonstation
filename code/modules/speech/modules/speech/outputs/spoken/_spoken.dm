@@ -18,10 +18,6 @@
 	if (!src.send_to_global)
 		message.flags |= SAYFLAG_DELIMITED_CHANNEL_ONLY
 
-	global.SpeechManager.ProcessMessagePrefix(message, src.parent_tree)
-	if (QDELETED(message))
-		return
-
 	. = ..()
 
 /datum/speech_module/output/spoken/proc/format(datum/say_message/message)
