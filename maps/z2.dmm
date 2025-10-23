@@ -1896,6 +1896,12 @@
 	icon_state = "leadwindow_white_2"
 	},
 /area/moon/museum/west)
+"ajH" = (
+/obj/fakeobject/cultiststatue,
+/turf/simulated/floor/stone{
+	explosion_immune = 1
+	},
+/area/space)
 "ajI" = (
 /turf/unsimulated/wall/auto/adventure/moon,
 /area/moon/museum)
@@ -44844,6 +44850,14 @@
 	},
 /turf/unsimulated/floor/red,
 /area/syndicate_station/battlecruiser)
+"dgF" = (
+/obj/submachine/chef_oven{
+	dir = 8
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "dgG" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -55360,6 +55374,12 @@
 	},
 /turf/unsimulated/floor/darkblueblack,
 /area/centcom/offices/jorj)
+"eGj" = (
+/obj/decal/stage_edge/dojo,
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "eGn" = (
 /obj/adventurepuzzle/triggerable/light/gauntlet,
 /turf/unsimulated/floor/plating,
@@ -56704,6 +56724,16 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/aloe)
+"fLz" = (
+/obj/table/podium_white,
+/obj/item/reagent_containers/food/drinks/skull_chalice/vampire{
+	pixel_x = 0;
+	pixel_y = 20
+	},
+/turf/simulated/floor/stone{
+	explosion_immune = 1
+	},
+/area/space)
 "fLD" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -56798,6 +56828,11 @@
 "fQk" = (
 /turf/unsimulated/floor/black/corner,
 /area/iomoon/base)
+"fQO" = (
+/turf/simulated/wall/auto/supernorn/material/mauxite{
+	explosion_protection = 1
+	},
+/area/space)
 "fRh" = (
 /obj/map/light/graveyard,
 /obj/tree{
@@ -56896,6 +56931,12 @@
 	icon_state = "shore-28"
 	},
 /area/titlescreen)
+"fUm" = (
+/obj/storage/closet/coffin/vampire,
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "fUo" = (
 /obj/cable/green{
 	icon_state = "0-8"
@@ -57388,6 +57429,12 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"gnO" = (
+/obj/table/mauxite,
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "gnY" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -59286,6 +59333,11 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/upper_arctic/pod1)
+"hMy" = (
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "hME" = (
 /obj/decal/poster/wallsign/stencil/left/a,
 /turf/unsimulated/floor/setpieces/gauntlet,
@@ -60383,6 +60435,14 @@
 	},
 /turf/unsimulated/floor/caution/corner/nw,
 /area/iomoon/base/underground)
+"iED" = (
+/obj/stool/chair/pew/fancy/right{
+	dir = 1
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "iEH" = (
 /obj/lattice{
 	icon_state = "lattice-dir"
@@ -60693,6 +60753,32 @@
 	},
 /turf/space,
 /area/wizard_station_space)
+"iRU" = (
+/obj/storage/secure/closet/fridge{
+	desc = "Most of this stuff isn't exactly for healing people.";
+	name = "'first-aid' fridge"
+	},
+/obj/item/scissors/surgical_scissors,
+/obj/item/surgical_spoon,
+/obj/item/scalpel,
+/obj/item/circular_saw,
+/obj/item/suture,
+/obj/item/staple_gun{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = 7;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/glass/bottle/formaldehyde{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "iSc" = (
 /obj/cable/green{
 	icon_state = "0-8"
@@ -65928,6 +66014,11 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
+"mWO" = (
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "mWP" = (
 /obj/machinery/light/emergency{
 	dir = 8
@@ -66642,6 +66733,15 @@
 /obj/item/storage/firstaid/toxin,
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
+"nys" = (
+/obj/table/reinforced/chemistry/auto{
+	desc = "A black countertop table for storing kitchen-y objects.";
+	name = "kitchen counter"
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "nyz" = (
 /obj/fakeobject/dreambeach/big/palm1,
 /turf/unsimulated/floor/dream/beach,
@@ -67663,6 +67763,14 @@
 	icon_state = "shore-36"
 	},
 /area/titlescreen)
+"ohL" = (
+/obj/stool/chair/pew/fancy/left{
+	dir = 1
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "ohW" = (
 /turf/unsimulated/floor/carpet{
 	dir = 1;
@@ -67741,6 +67849,11 @@
 /obj/item/radio_tape/adventure/xg2,
 /turf/unsimulated/floor/carpet/grime,
 /area/iomoon/base)
+"okr" = (
+/turf/simulated/wall/auto/reinforced/supernorn/blackred{
+	explosion_protection = 1
+	},
+/area/space)
 "okJ" = (
 /turf/unsimulated/floor/plating/random,
 /area/syndicate_station/battlecruiser)
@@ -68394,6 +68507,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/mrfishstick)
+"oQm" = (
+/obj/item/instrument/large/organ,
+/turf/simulated/floor/stone{
+	explosion_immune = 1
+	},
+/area/space)
 "oQB" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -70357,6 +70476,14 @@
 	dir = 1
 	},
 /area/crypt/sigma/morgue)
+"qlB" = (
+/obj/submachine/foodprocessor{
+	dir = 8
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "qlT" = (
 /obj/cable{
 	icon_state = "6-8"
@@ -72493,6 +72620,12 @@
 	name = "assembly line door"
 	},
 /area/drone/assembly)
+"rOD" = (
+/obj/kitchenspike,
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "rON" = (
 /obj/machinery/door/airlock/pyro/classic{
 	dir = 4;
@@ -73115,6 +73248,9 @@
 	},
 /turf/unsimulated/floor/red,
 /area/owlery/gangzone)
+"skM" = (
+/turf/unsimulated/floor/dojo/stonestair/left,
+/area/space)
 "skS" = (
 /obj/fakeobject/pipe{
 	density = 1;
@@ -73384,6 +73520,17 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
+"suN" = (
+/obj/decal/stage_edge/dojo,
+/obj/candle_light_2spoopy{
+	pixel_x = 1;
+	pixel_y = 14
+	},
+/obj/table/endtable_gothic,
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "suO" = (
 /obj/indestructible/shuttle_corner{
 	dir = 4;
@@ -74651,6 +74798,12 @@
 	dir = 4
 	},
 /area/sim/gunsim/lobby)
+"tId" = (
+/obj/machinery/vending/kitchen,
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "tIu" = (
 /obj/decal/poster/wallsign/poster_clown{
 	pixel_x = -3;
@@ -75027,6 +75180,14 @@
 	dir = 8
 	},
 /area/upper_arctic/exterior/surface)
+"tYT" = (
+/obj/stool/chair/pew/fancy/center{
+	dir = 1
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "tZb" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -75183,6 +75344,9 @@
 /obj/decal/stripe_delivery,
 /turf/unsimulated/floor/plating,
 /area/shuttle/biodome_elevator/upper)
+"ueq" = (
+/turf/unsimulated/floor/dojo/stonestair/right,
+/area/space)
 "uex" = (
 /obj/machinery/light{
 	dir = 8
@@ -75447,6 +75611,14 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"urg" = (
+/obj/machinery/deep_fryer{
+	dir = 4
+	},
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/space)
 "urH" = (
 /obj/lattice{
 	dir = 10;
@@ -76435,6 +76607,12 @@
 /obj/traitorifier/virtual/arcfiend,
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
+"veL" = (
+/obj/machinery/drainage,
+/turf/simulated/floor/industrial{
+	explosion_immune = 1
+	},
+/area/space)
 "veM" = (
 /obj/decal/cleanable/blood{
 	icon_state = "floor6"
@@ -76885,6 +77063,9 @@
 	},
 /turf/unsimulated/floor/wood/seven,
 /area/sim/gunsim/lobby)
+"vqH" = (
+/turf/unsimulated/floor/dojo/stonestair/middle,
+/area/space)
 "vqK" = (
 /obj/mesh/catwalk,
 /obj/mesh/catwalk,
@@ -77117,6 +77298,12 @@
 "vBq" = (
 /turf/unsimulated/wall/auto/adventure/shuttle/dark,
 /area/shuttle/merchant_shuttle/diner_centcom)
+"vCl" = (
+/obj/stool/wooden,
+/turf/simulated/floor/stone{
+	explosion_immune = 1
+	},
+/area/space)
 "vCF" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-0"
@@ -80015,6 +80202,11 @@
 	},
 /turf/unsimulated/floor/feather,
 /area/centcom/offices/leah)
+"xzf" = (
+/turf/simulated/floor/stone{
+	explosion_immune = 1
+	},
+/area/space)
 "xzj" = (
 /mob/living/critter/shade,
 /turf/unsimulated/floor/void{
@@ -164995,29 +165187,29 @@ cnw
 cnw
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 kmt
 gGM
@@ -165297,7 +165489,7 @@ cnw
 cnw
 cnw
 cnw
-cnw
+aaa
 cnw
 cnw
 cnw
@@ -165599,7 +165791,7 @@ cnw
 cnw
 cnw
 cnw
-cnw
+aaa
 cnw
 cnw
 cnw
@@ -165901,7 +166093,7 @@ cnw
 cnw
 cnw
 cnw
-cnw
+aaa
 cnw
 cnw
 cnw
@@ -166203,20 +166395,20 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+okr
+okr
+okr
+okr
+okr
+mWO
+okr
+okr
 cnw
 cnw
 cnw
@@ -166505,21 +166697,21 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+xzf
+eGj
+mWO
+ohL
+ohL
+ohL
+mWO
+mWO
+okr
+okr
 cnw
 cnw
 cnw
@@ -166807,21 +166999,21 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+xzf
+xzf
+suN
+mWO
+tYT
+tYT
+tYT
+mWO
+mWO
+mWO
+okr
 cnw
 cnw
 cnw
@@ -167109,25 +167301,25 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+ajH
+xzf
+xzf
+skM
+mWO
+iED
+iED
+iED
+mWO
+mWO
+mWO
+okr
+okr
+okr
+okr
+okr
 cnw
 cnw
 cnw
@@ -167411,25 +167603,25 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+xzf
+xzf
+xzf
+vqH
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
+mWO
+mWO
+mWO
+okr
 cnw
 cnw
 cnw
@@ -167713,25 +167905,25 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+oQm
+vCl
+fLz
+vqH
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
 cnw
 cnw
 cnw
@@ -168015,25 +168207,25 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+xzf
+xzf
+xzf
+vqH
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
+mWO
+mWO
+mWO
+okr
 cnw
 cnw
 cnw
@@ -168317,28 +168509,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+ajH
+xzf
+xzf
+ueq
+mWO
+ohL
+ohL
+ohL
+mWO
+mWO
+mWO
+okr
+okr
+mWO
+mWO
+okr
+okr
+okr
+okr
 cnw
 aaa
 kmt
@@ -168619,28 +168811,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+xzf
+xzf
+suN
+mWO
+tYT
+tYT
+tYT
+mWO
+mWO
+mWO
+okr
+okr
+mWO
+mWO
+okr
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -168921,28 +169113,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+xzf
+eGj
+mWO
+iED
+iED
+iED
+mWO
+mWO
+okr
+okr
+okr
+mWO
+mWO
+okr
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -169223,28 +169415,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+okr
+okr
+okr
+okr
+okr
+mWO
+okr
+okr
+urg
+okr
+mWO
+mWO
+okr
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -169525,28 +169717,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+fQO
+fQO
+iRU
+hMy
+veL
+hMy
+mWO
+mWO
+mWO
+nys
+nys
+mWO
+okr
+mWO
+mWO
+okr
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -169827,28 +170019,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+fQO
+gnO
+hMy
+hMy
+hMy
+okr
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -170129,28 +170321,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+fQO
+fUm
+hMy
+hMy
+gnO
+okr
+mWO
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
 cnw
 aaa
 kmt
@@ -170431,28 +170623,28 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+fQO
+hMy
+veL
+hMy
+gnO
+okr
+tId
+mWO
+mWO
+mWO
+mWO
+mWO
+okr
+okr
+okr
+okr
+okr
+okr
+okr
 cnw
 aaa
 kmt
@@ -170733,22 +170925,22 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+fQO
+rOD
+rOD
+fQO
+fQO
+okr
+okr
+dgF
+nys
+dgF
+nys
+qlB
+okr
 cnw
 cnw
 cnw
@@ -171035,22 +171227,22 @@ cnw
 cnw
 cnw
 cnw
+aaa
 cnw
 cnw
+fQO
+fQO
+fQO
+fQO
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+okr
+okr
+okr
+okr
+okr
+okr
+okr
 cnw
 cnw
 cnw
@@ -171337,7 +171529,7 @@ cnw
 cnw
 cnw
 cnw
-cnw
+aaa
 cnw
 cnw
 cnw
