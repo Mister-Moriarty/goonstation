@@ -1901,7 +1901,7 @@
 /turf/simulated/floor/stone{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "ajI" = (
 /turf/unsimulated/wall/auto/adventure/moon,
 /area/moon/museum)
@@ -44857,7 +44857,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "dgG" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -55379,7 +55379,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "eGn" = (
 /obj/adventurepuzzle/triggerable/light/gauntlet,
 /turf/unsimulated/floor/plating,
@@ -56733,7 +56733,7 @@
 /turf/simulated/floor/stone{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "fLD" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -56832,7 +56832,7 @@
 /turf/simulated/wall/auto/supernorn/material/mauxite{
 	explosion_protection = 1
 	},
-/area/space)
+/area/vampchapel)
 "fRh" = (
 /obj/map/light/graveyard,
 /obj/tree{
@@ -56936,7 +56936,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "fUo" = (
 /obj/cable/green{
 	icon_state = "0-8"
@@ -57434,7 +57434,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "gnY" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -59337,7 +59337,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "hME" = (
 /obj/decal/poster/wallsign/stencil/left/a,
 /turf/unsimulated/floor/setpieces/gauntlet,
@@ -60442,7 +60442,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "iEH" = (
 /obj/lattice{
 	icon_state = "lattice-dir"
@@ -60778,7 +60778,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "iSc" = (
 /obj/cable/green{
 	icon_state = "0-8"
@@ -66018,7 +66018,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "mWP" = (
 /obj/machinery/light/emergency{
 	dir = 8
@@ -66741,7 +66741,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "nyz" = (
 /obj/fakeobject/dreambeach/big/palm1,
 /turf/unsimulated/floor/dream/beach,
@@ -67770,7 +67770,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "ohW" = (
 /turf/unsimulated/floor/carpet{
 	dir = 1;
@@ -67853,7 +67853,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn/blackred{
 	explosion_protection = 1
 	},
-/area/space)
+/area/vampchapel)
 "okJ" = (
 /turf/unsimulated/floor/plating/random,
 /area/syndicate_station/battlecruiser)
@@ -68512,7 +68512,7 @@
 /turf/simulated/floor/stone{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "oQB" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -70483,7 +70483,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "qlT" = (
 /obj/cable{
 	icon_state = "6-8"
@@ -72625,7 +72625,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "rON" = (
 /obj/machinery/door/airlock/pyro/classic{
 	dir = 4;
@@ -73250,7 +73250,7 @@
 /area/owlery/gangzone)
 "skM" = (
 /turf/unsimulated/floor/dojo/stonestair/left,
-/area/space)
+/area/vampchapel)
 "skS" = (
 /obj/fakeobject/pipe{
 	density = 1;
@@ -73530,7 +73530,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "suO" = (
 /obj/indestructible/shuttle_corner{
 	dir = 4;
@@ -74803,7 +74803,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "tIu" = (
 /obj/decal/poster/wallsign/poster_clown{
 	pixel_x = -3;
@@ -75187,7 +75187,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "tZb" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -75346,7 +75346,7 @@
 /area/shuttle/biodome_elevator/upper)
 "ueq" = (
 /turf/unsimulated/floor/dojo/stonestair/right,
-/area/space)
+/area/vampchapel)
 "uex" = (
 /obj/machinery/light{
 	dir = 8
@@ -75618,7 +75618,7 @@
 /turf/simulated/floor/wood/five{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "urH" = (
 /obj/lattice{
 	dir = 10;
@@ -76612,7 +76612,7 @@
 /turf/simulated/floor/industrial{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "veM" = (
 /obj/decal/cleanable/blood{
 	icon_state = "floor6"
@@ -77065,7 +77065,7 @@
 /area/sim/gunsim/lobby)
 "vqH" = (
 /turf/unsimulated/floor/dojo/stonestair/middle,
-/area/space)
+/area/vampchapel)
 "vqK" = (
 /obj/mesh/catwalk,
 /obj/mesh/catwalk,
@@ -77303,7 +77303,7 @@
 /turf/simulated/floor/stone{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "vCF" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-0"
@@ -78225,6 +78225,9 @@
 /obj/item/ammo/ammobox/shootingrange,
 /turf/unsimulated/floor/darkblue,
 /area/syndicate_station/firing_range)
+"wiO" = (
+/turf/space,
+/area/vampchapel)
 "wjW" = (
 /obj/indestructible/shuttle_corner{
 	icon = 'icons/turf/walls/silicate.dmi';
@@ -80206,7 +80209,7 @@
 /turf/simulated/floor/stone{
 	explosion_immune = 1
 	},
-/area/space)
+/area/vampchapel)
 "xzj" = (
 /mob/living/critter/shade,
 /turf/unsimulated/floor/void{
@@ -165490,28 +165493,28 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -165792,28 +165795,28 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 mZE
@@ -166094,28 +166097,28 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -166396,9 +166399,9 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
 okr
 okr
 okr
@@ -166409,15 +166412,15 @@ okr
 mWO
 okr
 okr
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -166698,8 +166701,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 okr
 okr
 xzf
@@ -166712,14 +166715,14 @@ mWO
 mWO
 okr
 okr
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -167000,7 +167003,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 okr
 xzf
@@ -167014,14 +167017,14 @@ mWO
 mWO
 mWO
 okr
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -167302,7 +167305,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 ajH
 xzf
@@ -167320,10 +167323,10 @@ okr
 okr
 okr
 okr
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -167604,7 +167607,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 xzf
 xzf
@@ -167622,10 +167625,10 @@ mWO
 mWO
 mWO
 okr
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -167906,7 +167909,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 oQm
 vCl
@@ -167924,10 +167927,10 @@ mWO
 mWO
 mWO
 okr
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -168208,7 +168211,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 xzf
 xzf
@@ -168226,10 +168229,10 @@ mWO
 mWO
 mWO
 okr
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -168510,7 +168513,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 ajH
 xzf
@@ -168531,7 +168534,7 @@ okr
 okr
 okr
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -168812,7 +168815,7 @@ cnw
 cnw
 cnw
 aaa
-cnw
+wiO
 okr
 okr
 xzf
@@ -168833,7 +168836,7 @@ okr
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -169114,8 +169117,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 okr
 okr
 xzf
@@ -169135,7 +169138,7 @@ okr
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -169416,9 +169419,9 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
 okr
 okr
 okr
@@ -169437,7 +169440,7 @@ okr
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -169718,8 +169721,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 fQO
 iRU
@@ -169739,7 +169742,7 @@ okr
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -170020,8 +170023,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 gnO
 hMy
@@ -170041,7 +170044,7 @@ mWO
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -170322,8 +170325,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 fUm
 hMy
@@ -170343,7 +170346,7 @@ mWO
 mWO
 mWO
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -170624,8 +170627,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 hMy
 veL
@@ -170645,7 +170648,7 @@ okr
 okr
 okr
 okr
-cnw
+wiO
 aaa
 kmt
 gGM
@@ -170926,8 +170929,8 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 rOD
 rOD
@@ -170941,13 +170944,13 @@ dgF
 nys
 qlB
 okr
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -171228,14 +171231,14 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
+wiO
+wiO
 fQO
 fQO
 fQO
 fQO
-cnw
-cnw
+wiO
+wiO
 okr
 okr
 okr
@@ -171243,13 +171246,13 @@ okr
 okr
 okr
 okr
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 gGM
@@ -171530,28 +171533,28 @@ cnw
 cnw
 cnw
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
+wiO
 aaa
 kmt
 kmt
