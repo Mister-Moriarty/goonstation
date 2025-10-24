@@ -2944,6 +2944,16 @@
 	dir = 4
 	},
 /area/station/crew_quarters/fitness)
+"aPs" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fluid_spawner{
+	reagent_id = "plasma";
+	amount = 500
+	},
+/turf/simulated/floor/white,
+/area/station/science/lab)
 "aPG" = (
 /obj/decal/cleanable/dirt/jen,
 /obj/railing/orange{
@@ -4026,9 +4036,6 @@
 	},
 /area/station/crew_quarters/cafeteria)
 "bfi" = (
-/obj/machinery/light/incandescent/harsh{
-	dir = 8
-	},
 /obj/cable{
 	icon_state = "1-8"
 	},
@@ -6767,6 +6774,9 @@
 /obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
+/obj/decal/cleanable/cobweb/cobwebs_1/directional{
+	dir = 1
+	},
 /turf/simulated/floor/grass/leafy,
 /area/station/ranch)
 "bYr" = (
@@ -7017,9 +7027,6 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "cbj" = (
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
 /obj/machinery/manufacturer/gas,
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
@@ -10005,15 +10012,6 @@
 /obj/machinery/atmospherics/pipe/simple/color_pipe/yellow_pipe/overfloor,
 /turf/simulated/floor/black,
 /area/station/ai_monitored/armory)
-"cRM" = (
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/black,
-/area/station/science/storage)
 "cRV" = (
 /obj/machinery/light/incandescent/netural{
 	dir = 8
@@ -10202,6 +10200,9 @@
 	},
 /obj/machinery/light/incandescent/netural{
 	dir = 1
+	},
+/obj/decal/cleanable/cobweb/cobwebs_1/directional{
+	dir = 8
 	},
 /turf/simulated/floor/black,
 /area/station/crewquarters/fuq3)
@@ -10792,7 +10793,6 @@
 /turf/simulated/floor/sanitary,
 /area/station/medical/crematorium)
 "dfW" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light/small/sticky/harsh,
 /obj/machinery/conveyor/WE{
@@ -11352,6 +11352,16 @@
 	},
 /turf/simulated/wall/auto/reinforced/jen/blue,
 /area/station/crew_quarters/clown)
+"dok" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/white,
+/area/station/science/lab)
 "dol" = (
 /obj/stool/chair/office{
 	dir = 1
@@ -12518,6 +12528,10 @@
 /area/station/bridge)
 "dJr" = (
 /obj/machinery/light/small/sticky/harsh,
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
 "dJw" = (
@@ -15059,7 +15073,6 @@
 /turf/simulated/wall/auto/reinforced/jen/purple,
 /area/station/science/lab)
 "eym" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/decal/stripe_caution,
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
@@ -15561,9 +15574,6 @@
 	},
 /obj/machinery/camera/directional/north{
 	pixel_x = -10
-	},
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
 	},
 /turf/simulated/floor/white,
 /area/station/science/lab)
@@ -17577,7 +17587,7 @@
 	},
 /area/station/security/main)
 "foy" = (
-/obj/machinery/light/small/floor/harsh,
+/mob/living/critter/crunched,
 /turf/simulated/floor/black,
 /area/station/science/storage)
 "foO" = (
@@ -17832,6 +17842,17 @@
 /area/station/science/testchamber)
 "fsH" = (
 /obj/stool/chair/comfy,
+/obj/mapping_helper/mob_spawn/corpse/human/scientist{
+	headless = 1;
+	gender = "male"
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
+/obj/effects/lightshaft{
+	color = "#8228A0"
+	},
 /turf/simulated/floor/black,
 /area/station/science/storage)
 "fsU" = (
@@ -18157,6 +18178,18 @@
 	},
 /turf/simulated/floor/white,
 /area/station/crewquarters/fuq3)
+"fyi" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 4
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor4";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/grime{
+	dir = 8
+	},
+/area/station/science/lab)
 "fyn" = (
 /obj/machinery/light/incandescent/netural{
 	dir = 1
@@ -19024,6 +19057,14 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/crew_quarters/quarters)
+"fKR" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/black,
+/area/station/science/storage)
 "fKV" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/disposalpipe/segment/mail{
@@ -26194,6 +26235,20 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/nw)
+"hWP" = (
+/obj/item/tank/plasma{
+	pixel_x = 14;
+	pixel_y = -5
+	},
+/obj/item/tank/plasma{
+	pixel_x = 20;
+	pixel_y = -7
+	},
+/obj/decal/cleanable/blood/gibs{
+	color = "#8228A0"
+	},
+/turf/simulated/floor/black,
+/area/station/science/storage)
 "hWR" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -26400,12 +26455,6 @@
 	},
 /turf/simulated/floor/wood/five,
 /area/station/hydroponics/bay)
-"iao" = (
-/obj/machinery/light/small/sticky/harsh{
-	dir = 4
-	},
-/turf/simulated/floor/plating/jen,
-/area/station/science/storage)
 "iap" = (
 /obj/iv_stand,
 /obj/item/reagent_containers/iv_drip,
@@ -28456,6 +28505,7 @@
 /area/station/science/testchamber/bombchamber)
 "iIh" = (
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
 "iIq" = (
@@ -29338,9 +29388,6 @@
 /turf/simulated/floor/red,
 /area/station/ai_monitored/armory)
 "iWm" = (
-/obj/machinery/light/incandescent/harsh{
-	dir = 8
-	},
 /obj/cable{
 	icon_state = "2-8"
 	},
@@ -29834,9 +29881,6 @@
 /obj/item/crowbar{
 	pixel_x = 2;
 	pixel_y = 2
-	},
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
 	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
@@ -30769,9 +30813,6 @@
 "jrN" = (
 /obj/machinery/portable_atmospherics/canister/empty,
 /obj/decal/stripe_caution,
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
 /obj/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
 	},
@@ -34667,6 +34708,14 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/entry)
+"kAc" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor4";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/black,
+/area/station/science/storage)
 "kAe" = (
 /obj/decal/tile_edge/line/yellow{
 	dir = 6;
@@ -36568,7 +36617,7 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /obj/mapping_helper/mob_spawn/corpse/critter{
 	change_name = "Heisenbarkeep";
-	change_desc="Well, there he is. It's rough out here for a working bee."
+	change_desc = "Well, there he is. It's rough out here for a working bee."
 	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
@@ -37214,6 +37263,16 @@
 /obj/disposalpipe/segment,
 /turf/simulated/wall/auto/jen,
 /area/station/crew_quarters/arcade/dungeon)
+"lrq" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fluid_spawner{
+	reagent_id = "plasma";
+	amount = 500
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "lrR" = (
 /obj/cable{
 	icon_state = "2-5"
@@ -38677,10 +38736,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/main)
-"lLj" = (
-/obj/machinery/light/incandescent/harsh,
-/turf/simulated/floor/black,
-/area/station/science/storage)
 "lLR" = (
 /obj/machinery/light/incandescent/netural{
 	dir = 4
@@ -43166,9 +43221,6 @@
 	},
 /area/station/security/quarters)
 "nfZ" = (
-/obj/machinery/light/small/sticky/harsh{
-	dir = 8
-	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
 "ngc" = (
@@ -43638,6 +43690,10 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/cable{
 	icon_state = "1-2"
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor4";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/black,
 /area/station/science/storage)
@@ -44416,13 +44472,6 @@
 "nzQ" = (
 /turf/simulated/floor/white/checker,
 /area/station/hallway/primary/south)
-"nzX" = (
-/obj/machinery/light/small/floor/harsh,
-/obj/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/black/grime,
-/area/station/science/storage)
 "nzZ" = (
 /obj/machinery/flasher/portable,
 /obj/decal/mule/beacon,
@@ -47106,10 +47155,6 @@
 /obj/stool/bench/red,
 /turf/simulated/floor/purple,
 /area/station/hallway/primary/south)
-"oqm" = (
-/obj/machinery/light/incandescent/harsh,
-/turf/simulated/floor/white,
-/area/station/science/lab)
 "oqp" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -48143,6 +48188,13 @@
 	},
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/main)
+"oGE" = (
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/black/grime,
+/area/station/science/storage)
 "oGJ" = (
 /obj/table/wood/auto,
 /obj/drink_rack/mug{
@@ -50162,9 +50214,6 @@
 	pixel_x = 5;
 	pixel_y = -2
 	},
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
 "plp" = (
@@ -52041,9 +52090,6 @@
 /turf/simulated/wall/auto/jen,
 /area/station/crew_quarters/kitchen/freezer)
 "pPz" = (
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 4
 	},
@@ -52771,6 +52817,9 @@
 /obj/item/clothing/suit/space/engineer,
 /obj/cable{
 	icon_state = "2-8"
+	},
+/obj/decal/cleanable/cobweb/cobwebs_1/directional{
+	dir = 1
 	},
 /turf/simulated/floor/yellow,
 /area/station/engine/inner)
@@ -53559,6 +53608,10 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/fluid_spawner{
+	reagent_id = "plasma";
+	amount = 500
+	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
 "qoH" = (
@@ -54189,6 +54242,10 @@
 "qyQ" = (
 /obj/cable{
 	icon_state = "1-8"
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor4";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
@@ -56716,13 +56773,6 @@
 	},
 /turf/simulated/floor/blue,
 /area/station/medical/medbay/surgery/storage)
-"rmT" = (
-/obj/machinery/atmospherics/binary/valve,
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
-/turf/simulated/floor/white,
-/area/station/science/lab)
 "rmY" = (
 /obj/machinery/light{
 	dir = 8;
@@ -56812,7 +56862,6 @@
 /turf/simulated/floor/plating/jen,
 /area/station/hallway/secondary/exit)
 "roR" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/machinery/conveyor/WE{
 	id = "toxins_plasma";
 	operating = 1
@@ -67001,6 +67050,10 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/inner/east)
+"usD" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/simulated/floor/black,
+/area/station/science/storage)
 "usH" = (
 /obj/disposalpipe/segment/brig{
 	dir = 8;
@@ -67471,9 +67524,6 @@
 "uyT" = (
 /obj/machinery/portable_atmospherics/pump,
 /obj/decal/stripe_caution,
-/obj/machinery/light/incandescent/harsh{
-	dir = 1
-	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
 "uzh" = (
@@ -68285,7 +68335,6 @@
 /turf/simulated/floor/green,
 /area/station/medical/cdc)
 "uKq" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/machinery/conveyor/WE{
 	id = "toxins_plasma";
 	operating = 1
@@ -69881,13 +69930,11 @@
 /area/station/engine/storage)
 "vig" = (
 /obj/table/wood/round/auto,
-/obj/item/decoration/ashtray{
-	pixel_x = 4
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass/oldf{
-	initial_reagents = "bourbon";
-	pixel_x = -6;
-	pixel_y = 4
+/obj/item/reagent_containers/glass/water_pipe{
+	pixel_x = -5;
+	pixel_y = 14;
+	initial_reagents = "plasma";
+	desc = "jesus"
 	},
 /turf/simulated/floor/black,
 /area/station/science/storage)
@@ -70126,7 +70173,6 @@
 /turf/simulated/floor/plating,
 /area/station/quartermaster/office)
 "vmh" = (
-/obj/machinery/light/incandescent/harsh,
 /obj/machinery/atmospherics/unary/cold_sink/freezer{
 	dir = 8
 	},
@@ -114048,7 +114094,7 @@ hyr
 qlG
 fkZ
 cBs
-awb
+lrq
 cBs
 tmk
 fgt
@@ -115559,7 +115605,7 @@ qlG
 fkZ
 tNo
 tNo
-tNo
+fyi
 veI
 uuF
 blU
@@ -115573,8 +115619,8 @@ naf
 ijU
 eym
 hzD
-cRM
-bBt
+bBg
+hWP
 fsH
 ijU
 pqh
@@ -115865,7 +115911,7 @@ gjM
 nxW
 gjM
 nxW
-oqm
+gjM
 hyr
 vDz
 cyo
@@ -116166,12 +116212,12 @@ gjM
 gjM
 nxW
 mwH
-nxW
+aPs
 aDq
 hyr
 ccr
 cyo
-vDz
+oGE
 pKP
 gOw
 nfZ
@@ -116180,7 +116226,7 @@ qdC
 bBg
 bBt
 bBt
-lLj
+bBt
 uuu
 hzD
 pqh
@@ -116473,7 +116519,7 @@ gjM
 hyr
 iIh
 lYB
-nzX
+qkU
 kXO
 ifr
 ifr
@@ -116481,7 +116527,7 @@ ifr
 nmX
 kkE
 foy
-bBt
+usD
 bBt
 rqz
 clN
@@ -116778,10 +116824,10 @@ cyo
 vDz
 ieH
 jop
-iao
+nfZ
 vvQ
 qdC
-bBt
+kAc
 bBt
 bBt
 bBt
@@ -117072,7 +117118,7 @@ gjM
 dXx
 cEz
 mVp
-nxW
+dok
 vmh
 hyr
 jcb
@@ -117369,7 +117415,7 @@ lYU
 buA
 kBy
 kTd
-rmT
+oJf
 bdb
 eyo
 gUa
@@ -117386,7 +117432,7 @@ ijU
 mEC
 hzD
 pPz
-bBt
+fKR
 xli
 ijU
 hkC
@@ -117983,7 +118029,7 @@ oNo
 hyr
 gTW
 vDz
-dJr
+vDz
 ijU
 gCU
 ijU
