@@ -4039,6 +4039,11 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
+/obj/decal/poster/wallsign/stencil/left/o{
+	color = "#8228A0";
+	pixel_x = 11;
+	pixel_y = 6
+	},
 /turf/simulated/floor/grime{
 	dir = 8
 	},
@@ -5667,10 +5672,11 @@
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "bET" = (
-/obj/mapping_helper/wingrille_spawn/auto/reinforced/crystal,
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/item/raw_material/shard/plasmacrystal,
+/obj/structure/woodwall,
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
 "bEU" = (
@@ -10286,21 +10292,8 @@
 /area/spacehabitat/owlery)
 "cWT" = (
 /obj/table/auto,
-/obj/item/screwdriver{
-	pixel_x = 10;
-	pixel_y = 6
-	},
-/obj/item/screwdriver{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -10;
-	pixel_y = 10
-	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -10;
-	pixel_y = 4
+/obj/item/reagent_containers/food/drinks/drinkingglass/round{
+	initial_reagents = "plasma"
 	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
@@ -10798,6 +10791,10 @@
 /obj/machinery/conveyor/WE{
 	id = "toxins_plasma";
 	operating = 1
+	},
+/obj/decal/cleanable/blood{
+	icon_state = "handblood";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
@@ -11359,6 +11356,11 @@
 /obj/decal/cleanable/blood/splatter{
 	icon_state = "floor2";
 	color = "#8228A0"
+	},
+/obj/item/paper/rippednote{
+	desc = "Kinda damp?";
+	name = "paper- 'scrawled note'";
+	info = "You want to fire me? I'll drink your plasma. My new method of gas distillation will come with me to the GRAVE!"
 	},
 /turf/simulated/floor/white,
 /area/station/science/lab)
@@ -15038,7 +15040,8 @@
 	icon_state = "line1"
 	},
 /obj/decal/cleanable/blood{
-	icon_state = "handblood"
+	icon_state = "handblood";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/white,
 /area/station/medical/cdc)
@@ -15074,6 +15077,10 @@
 /area/station/science/lab)
 "eym" = (
 /obj/decal/stripe_caution,
+/obj/decal/cleanable/blood{
+	icon_state = "handblood";
+	color = "#8228A0"
+	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
 "eyo" = (
@@ -17587,7 +17594,12 @@
 	},
 /area/station/security/main)
 "foy" = (
-/mob/living/critter/crunched,
+/mob/living/critter/crunched{
+	health_brute = 100;
+	health_burn = 100;
+	name = "purpled-out scientist";
+	desc = "Oh my god."
+	},
 /turf/simulated/floor/black,
 /area/station/science/storage)
 "foO" = (
@@ -18186,6 +18198,7 @@
 	icon_state = "floor4";
 	color = "#8228A0"
 	},
+/obj/reagent_dispensers/chemicalbarrel,
 /turf/simulated/floor/grime{
 	dir = 8
 	},
@@ -18653,7 +18666,7 @@
 	pixel_y = 13
 	},
 /obj/random_item_spawner/tableware/three,
-/obj/dialogueobj/securitycorpse3,
+/obj/fakeobject/deadsecurity,
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
 	name = "Restricted Area"
@@ -25114,6 +25127,19 @@
 	icon_state = "purple2"
 	},
 /area/station/crew_quarters/quartersA)
+"hBv" = (
+/obj/decal/poster/wallsign/stencil/left/u{
+	color = "#8228A0";
+	pixel_x = -20;
+	pixel_y = 13
+	},
+/obj/decal/poster/wallsign/stencil/left/t{
+	color = "#8228A0";
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/turf/simulated/floor/white,
+/area/station/science/lab)
 "hBz" = (
 /obj/decal/cleanable/dirt/jen,
 /obj/cable{
@@ -26236,14 +26262,6 @@
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/nw)
 "hWP" = (
-/obj/item/tank/plasma{
-	pixel_x = 14;
-	pixel_y = -5
-	},
-/obj/item/tank/plasma{
-	pixel_x = 20;
-	pixel_y = -7
-	},
 /obj/decal/cleanable/blood/gibs{
 	color = "#8228A0"
 	},
@@ -26640,7 +26658,8 @@
 	pixel_y = -5
 	},
 /obj/decal/cleanable/blood{
-	icon_state = "handblood"
+	icon_state = "handblood";
+	color = "#8228A0"
 	},
 /obj/decal/cleanable/blood{
 	icon_state = "floor6"
@@ -27607,6 +27626,15 @@
 /obj/decal/poster/wallsign/biohazard,
 /turf/simulated/wall/auto/reinforced/jen/blue,
 /area/station/medical/morgue)
+"iup" = (
+/obj/machinery/atmospherics/unary/outlet_injector/active{
+	dir = 4;
+	pixel_x = 0;
+	pixel_y = 18;
+	name = "Repurposed Air Injector"
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "ius" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -29391,6 +29419,20 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/item/tank/plasma{
+	pixel_x = 20;
+	pixel_y = -7
+	},
+/obj/fakeobject/safehouse/biomatter_tank{
+	name = "plasma storage tank";
+	desc = "Distilling..?";
+	pixel_x = 0;
+	pixel_y = -1
+	},
+/obj/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	color = "#8228A0"
+	},
 /turf/simulated/floor/grime{
 	dir = 8
 	},
@@ -29871,16 +29913,10 @@
 /area/station/crew_quarters/fitness)
 "jcb" = (
 /obj/table/auto,
-/obj/item/extinguisher{
-	pixel_x = -6;
-	pixel_y = 8
-	},
-/obj/item/extinguisher{
-	pixel_y = 9
-	},
-/obj/item/crowbar{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/item/paper/rippednote{
+	desc = "Kinda damp?";
+	name = "paper- 'scrawled note'";
+	info = "You want to fire me? I'll drink your plasma. My new method of gas distillation will come with me to the GRAVE!"
 	},
 /turf/simulated/floor/black/grime,
 /area/station/science/storage)
@@ -31252,6 +31288,18 @@
 	},
 /turf/simulated/floor,
 /area/station/quartermaster/office)
+"jyM" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/item/tank/plasma{
+	pixel_x = 14;
+	pixel_y = 7
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced/crystal,
+/obj/fakeobject/safehouse/biotube,
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "jyN" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -36931,15 +36979,11 @@
 /turf/simulated/floor/black,
 /area/station/bridge/reception)
 "lmi" = (
-/obj/machinery/door/airlock/pyro/glass{
-	dir = 8
-	},
-/obj/mapping_helper/access/tox,
-/obj/mapping_helper/firedoor_spawn,
 /obj/decal/stripe_delivery,
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/woodwall,
 /turf/simulated/floor/black,
 /area/station/science/lab)
 "lml" = (
@@ -37269,7 +37313,7 @@
 	},
 /obj/fluid_spawner{
 	reagent_id = "plasma";
-	amount = 500
+	amount = 100
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
@@ -40686,6 +40730,19 @@
 "mpU" = (
 /turf/simulated/wall/auto/jen,
 /area/station/chapel/sanctuary)
+"mqb" = (
+/obj/decal/tile_edge/line/blue,
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8
+	},
+/obj/decal/stripe_delivery,
+/obj/decoration/paperstack/large{
+	desc = "Looks like scrawled research notes. None of it's particularly legible."
+	},
+/turf/simulated/floor/grime{
+	dir = 8
+	},
+/area/station/science/lab)
 "mqf" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -41113,6 +41170,11 @@
 /area/station/bridge/customs)
 "mwH" = (
 /obj/item/device/radio/beacon,
+/obj/decal/poster/wallsign/stencil/left/o{
+	color = "#8228A0";
+	pixel_x = 18;
+	pixel_y = 13
+	},
 /turf/simulated/floor/white,
 /area/station/science/lab)
 "mwQ" = (
@@ -43108,6 +43170,11 @@
 	dir = 8
 	},
 /obj/machinery/light/incandescent/harsh,
+/obj/decal/cleanable/writing{
+	color = "#8228A0";
+	font_color = "#8228A0";
+	words = "do not open"
+	},
 /turf/simulated/floor/grey,
 /area/station/science/lab)
 "ndN" = (
@@ -44879,8 +44946,8 @@
 /obj/stool/bar,
 /obj/item/kitchen/utensil/knife{
 	dir = 8;
-	pixel_x = -13;
-	pixel_y = -1
+	pixel_x = -5;
+	pixel_y = -12
 	},
 /obj/item/toy/plush/small/bee/cute{
 	pixel_x = 2;
@@ -44888,6 +44955,7 @@
 	name = "'Heisenbarkeep'";
 	desc = "A calling card, or..? Its name is written on its tag."
 	},
+/obj/decal/cleanable/blood,
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
 	name = "Restricted Area"
@@ -45528,6 +45596,19 @@
 /obj/machinery/glass_recycler/chemistry,
 /turf/simulated/floor/purpleblack/corner,
 /area/station/science/chemistry)
+"nQb" = (
+/obj/decal/poster/wallsign/stencil/left/u{
+	color = "#8228A0";
+	pixel_x = -2;
+	pixel_y = 9
+	},
+/obj/decal/poster/wallsign/stencil/left/t{
+	color = "#8228A0";
+	pixel_x = 10;
+	pixel_y = 7
+	},
+/turf/simulated/floor/white,
+/area/station/science/lab)
 "nQd" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -48408,8 +48489,8 @@
 	dir = 4;
 	pixel_x = -9
 	},
-/obj/dialogueobj/securitycorpse1,
 /obj/decal/cleanable/blood,
+/obj/fakeobject/deadsecurity,
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
 	name = "Restricted Area"
@@ -48706,7 +48787,6 @@
 /obj/decal/cleanable/dirt/jen,
 /obj/decal/cleanable/rust/jen,
 /obj/machinery/light_switch/west,
-/obj/dialogueobj/securitycorpse6,
 /obj/decal/cleanable/blood,
 /obj/decal/cleanable/blood/gibs{
 	icon_state = "gibmid2"
@@ -48714,6 +48794,7 @@
 /obj/decal/cleanable/blood{
 	icon_state = "footprints1"
 	},
+/obj/fakeobject/deadsecurity,
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
 	name = "Restricted Area"
@@ -53608,10 +53689,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_spawner{
-	reagent_id = "plasma";
-	amount = 500
-	},
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
 "qoH" = (
@@ -56869,6 +56947,10 @@
 /obj/strip_door{
 	dir = 4;
 	layer = 3
+	},
+/obj/decal/cleanable/blood{
+	icon_state = "handblood";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
@@ -62771,6 +62853,13 @@
 	dir = 8
 	},
 /area/station/hallway/secondary/entry)
+"tcL" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fakeobject/safehouse/biotube,
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "tcM" = (
 /obj/machinery/light/incandescent/cool,
 /obj/machinery/camera/directional/south{
@@ -67998,6 +68087,9 @@
 /obj/decal/cleanable/cobweb/cobwebs_1/directional{
 	dir = 8
 	},
+/obj/decoration/paperstack/massive{
+	desc = "Looks like scrawled research notes. None of it's particularly legible."
+	},
 /turf/simulated/floor/grime{
 	dir = 8
 	},
@@ -68338,6 +68430,10 @@
 /obj/machinery/conveyor/WE{
 	id = "toxins_plasma";
 	operating = 1
+	},
+/obj/decal/cleanable/blood{
+	icon_state = "handblood";
+	color = "#8228A0"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/storage)
@@ -69197,6 +69293,10 @@
 	},
 /turf/simulated/floor/black/grime,
 /area/station/security/brig/south_side)
+"uXs" = (
+/obj/item/tank/plasma,
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "uXw" = (
 /obj/railing/orange,
 /obj/decal/cleanable/dirt/jen,
@@ -69935,6 +70035,12 @@
 	pixel_y = 14;
 	initial_reagents = "plasma";
 	desc = "jesus"
+	},
+/obj/item/paper/numbers_note{
+	color = "#a44ec1";
+	pixel_x = 6;
+	pixel_y = 3;
+	info = "I found a new way. bong. lif t s    meee eee e  e"
 	},
 /turf/simulated/floor/black,
 /area/station/science/storage)
@@ -70686,6 +70792,12 @@
 /obj/machinery/power/apc/autoname_north,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/inner/nw)
+"vtq" = (
+/obj/decal/poster/wallsign/stencil/left/o{
+	color = "#8228A0"
+	},
+/turf/simulated/floor/white,
+/area/station/science/lab)
 "vtx" = (
 /turf/simulated/floor/specialroom/arcade,
 /area/station/janitor/supply)
@@ -74099,6 +74211,16 @@
 	},
 /turf/simulated/floor/stairs/wood2/wide,
 /area/station/crew_quarters/cafeteria)
+"wtc" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/decal/cleanable/blood{
+	icon_state = "handblood";
+	color = "#8228A0"
+	},
+/turf/simulated/floor/plating/jen,
+/area/station/science/storage)
 "wtq" = (
 /obj/submachine/chicken_incubator,
 /obj/item/reagent_containers/food/snacks/ingredient/egg{
@@ -76410,6 +76532,19 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/sw)
+"wZN" = (
+/obj/decal/poster/wallsign/stencil/left/u{
+	color = "#8228A0"
+	},
+/obj/decal/poster/wallsign/stencil/left/t{
+	color = "#8228A0";
+	pixel_x = 8;
+	pixel_y = 1
+	},
+/turf/simulated/floor/grime{
+	dir = 8
+	},
+/area/station/science/lab)
 "wZR" = (
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
@@ -113793,7 +113928,7 @@ hyr
 hyr
 cBs
 kLZ
-cBs
+uXs
 hyr
 pQB
 rOi
@@ -114095,7 +114230,7 @@ qlG
 fkZ
 cBs
 lrq
-cBs
+iup
 tmk
 fgt
 qoy
@@ -114396,7 +114531,7 @@ hyr
 qlG
 hyr
 ogg
-awb
+tcL
 bvI
 hyr
 bvI
@@ -114698,7 +114833,7 @@ hyr
 qlG
 hyr
 dTb
-bET
+jyM
 hSn
 hyr
 rpM
@@ -115301,12 +115436,12 @@ kuM
 hyr
 qlG
 hyr
-jYs
+mqb
 oJg
 gBa
 tif
 gBa
-oJg
+wZN
 jYs
 hyr
 vDz
@@ -115906,7 +116041,7 @@ hyr
 hyr
 hyr
 vOe
-gjM
+vtq
 gjM
 nxW
 gjM
@@ -116208,7 +116343,7 @@ hyr
 rdj
 hyr
 eIb
-gjM
+hBv
 gjM
 nxW
 mwH
@@ -116513,7 +116648,7 @@ gMK
 oJf
 ihI
 nxW
-gjM
+nQb
 nxW
 gjM
 hyr
@@ -116522,7 +116657,7 @@ lYB
 qkU
 kXO
 ifr
-ifr
+wtc
 ifr
 nmX
 kkE

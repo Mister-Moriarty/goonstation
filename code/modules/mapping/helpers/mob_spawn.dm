@@ -36,6 +36,7 @@
 		var/mob/living/M = new spawn_type(src.loc)
 		if (src.change_name)
 			M.name = src.change_name
+			M.real_name = src.change_name
 		if (src.change_desc)
 			M.desc = src.change_desc
 		if (src.container_type)
