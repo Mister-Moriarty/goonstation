@@ -311,13 +311,13 @@
 		if (lit)
 			return
 		user.visible_message("[user] adds [item] to [src].", "You add [item] to [src].")
-		var/obj/item/jack = new /obj/item/clothing/head/pumpkin/jackolantern
+		var/obj/item/jack = new /obj/item/jackolantern
 		jack.set_loc(src)
 		qdel(src)
 
-	jackolantern
-		name = "Jack-O-Lantern"
-		desc = "Spookiest!"
-		icon = 'icons/misc/halloween.dmi'
-		icon_state = "flight1"
-		item_state = "lantern"
+/obj/item/jackolantern
+	name = "Jack-O-Lantern"
+	desc = "Spookiest!"
+	icon = 'icons/misc/halloween.dmi'
+	icon_state = "flight1"
+	item_state = "lantern"

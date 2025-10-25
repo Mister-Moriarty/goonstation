@@ -61914,14 +61914,6 @@
 /obj/machinery/light,
 /turf/unsimulated/floor,
 /area/centcom/lounge)
-"jvP" = (
-/obj/fakeobject/Azarakcandleswall{
-	dir = 1
-	},
-/turf/simulated/wall/auto/reinforced/supernorn/blackred{
-	explosion_protection = 1
-	},
-/area/vampchapel)
 "jvX" = (
 /obj/decal/cleanable/dirt/dirt4,
 /turf/unsimulated/floor/grime,
@@ -165538,7 +165530,7 @@ nyn
 wUN
 yag
 pOm
-jvP
+okr
 mWz
 wiO
 wiO
@@ -167048,7 +167040,7 @@ okr
 okr
 okr
 fuB
-okr
+kPu
 xxX
 pOm
 vqH
@@ -168544,7 +168536,7 @@ cnw
 aaa
 wiO
 mWz
-okr
+kPu
 oQm
 vCl
 fLz
@@ -168858,7 +168850,7 @@ gRx
 hej
 mNv
 isd
-okr
+kPu
 kwk
 pOm
 pOm
