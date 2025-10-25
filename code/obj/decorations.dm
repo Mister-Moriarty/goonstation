@@ -420,6 +420,12 @@
 		name = "Dead shrub"
 		icon_state = "shrub-dead"
 
+/obj/shrub/meat
+	name = "shrub?"
+	desc = "This one is definitely not a real bush."
+	icon = 'icons/misc/meatland.dmi'
+	icon_state = "light"
+
 //It'll show up on multitools
 TYPEINFO(/obj/shrub/syndicateplant)
 	mats = 2
