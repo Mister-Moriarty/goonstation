@@ -177,6 +177,11 @@
 /// Flush all message buffers associated with the target datum.
 #define COMSIG_FLUSH_MESSAGE_BUFFER "flush_message_buffer"
 
+/// Say message datums are never explicitly qdeleted, so in order to unregister signals (for messages to properly dispose) a special deregistration signal is required.
+#define COMSIG_UNREGISTER_MESSAGE_SIGNALS "unregister_message_signals"
+/// Allows for every message datum originating from a single message datum to have a callback applied to it.
+#define COMSIG_APPLY_CALLBACK_TO_MESSAGE_COPIES "apply_callback_to_message_copies"
+
 // ---- Client Signals ----
 /// When a client logs into a mob. (client, mob)
 #define COMSIG_CLIENT_LOGIN "client_login"
@@ -184,3 +189,9 @@
 #define COMSIG_CLIENT_LOGOUT "client_logout"
 /// When a client's chat is loaded
 #define COMSIG_CLIENT_CHAT_LOADED "client_chat_loaded"
+
+// ---- Extradimensional Prefab Signals ----
+/// When an `/atom/movable` enters a dimensional locker. (sender, atom_movable)
+#define COMSIG_EXTRADIMENSIONAL_PREFAB_ENTERED "extradimensional_prefab_entered"
+/// When an `/atom/movable` attempts to leave a dimensional locker. (sender, atom_movable, old_loc)
+#define COMSIG_EXTRADIMENSIONAL_PREFAB_EXIT "extradimensional_prefab_exit"
