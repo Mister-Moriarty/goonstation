@@ -4740,13 +4740,6 @@
 	},
 /turf/unsimulated/floor/specialroom/freezer,
 /area/hospital)
-"awW" = (
-/turf/simulated/floor/stairs/wood{
-	dir = 4
-	},
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "awX" = (
 /obj/machinery/door/poddoor/blast{
 	dir = 4;
@@ -56115,6 +56108,12 @@
 	name = "strange surface"
 	},
 /area/crater/cave/lower)
+"fem" = (
+/obj/fakeobject/Azarakcandleswall,
+/turf/simulated/wall/auto/reinforced/jen,
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "fen" = (
 /obj/structure/woodwall,
 /turf/unsimulated/floor/plating,
@@ -62313,6 +62312,11 @@
 	dir = 1
 	},
 /area/iomoon/base/underground)
+"jAt" = (
+/turf/simulated/wall/auto/reinforced/jen,
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "jAK" = (
 /obj/fakeobject{
 	icon = 'icons/obj/window.dmi';
@@ -64602,6 +64606,14 @@
 "liR" = (
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/kyle)
+"ljN" = (
+/turf/simulated/floor/stairs/wood{
+	dir = 1;
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "ljO" = (
 /obj/lattice{
 	dir = 10;
@@ -70314,6 +70326,14 @@
 	dir = 6
 	},
 /area/afterlife/bar)
+"puz" = (
+/turf/simulated/floor/stairs/wood{
+	dir = 4;
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "pwe" = (
 /obj/decal/cleanable/dirt/dirt5,
 /obj/decal/residual_energy,
@@ -78163,6 +78183,13 @@
 /obj/machinery/light/lamp/green,
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/mrfishstick)
+"vlw" = (
+/turf/simulated/floor/stairs/wood{
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "vlH" = (
 /obj/storage/crate/packing,
 /obj/random_item_spawner/hat/lots,
@@ -79937,6 +79964,14 @@
 	},
 /turf/space,
 /area/syndicate_station_space)
+"wtR" = (
+/turf/simulated/floor/stairs/wood{
+	dir = 8;
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "wtT" = (
 /obj/lattice{
 	dir = 1;
@@ -80962,11 +80997,6 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
-"xaP" = (
-/turf/simulated/floor/stairs/wood,
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "xbl" = (
 /obj/item/implant/artifact/ancient/ancient_gimmick,
 /turf/unsimulated/floor/setpieces{
@@ -169562,8 +169592,8 @@ mWz
 pgP
 mWz
 pgP
-wiO
-wiO
+pgP
+pgP
 aaa
 kmt
 gGM
@@ -169859,13 +169889,13 @@ okr
 rxF
 pOm
 pOm
-okr
-okr
-okr
-okr
+jAt
+jAt
+jAt
+jAt
+jAt
+jAt
 pgP
-wiO
-wiO
 aaa
 kmt
 gGM
@@ -170161,13 +170191,13 @@ okr
 tum
 egs
 pOm
-gjJ
+ljN
+gVl
+gVl
+ljN
 pOm
-pOm
-okr
+jAt
 pgP
-wiO
-wiO
 aaa
 kmt
 gGM
@@ -170462,14 +170492,14 @@ okr
 okr
 okr
 okr
-okr
-okr
-okr
-awW
-okr
+jAt
+jAt
+jAt
+jAt
+jAt
+gVl
+jAt
 pgP
-wiO
-wiO
 aaa
 kmt
 gGM
@@ -170764,14 +170794,14 @@ okr
 urg
 okr
 mWz
-okr
-pOm
-xaP
-pOm
-okr
-mWz
-wiO
-wiO
+jAt
+gVl
+gVl
+gjJ
+jAt
+gVl
+jAt
+pgP
 aaa
 kmt
 gGM
@@ -171066,14 +171096,14 @@ grx
 mWn
 okr
 pgP
-okr
-okr
-okr
-okr
-okr
-mWz
-wiO
-wiO
+jAt
+wtR
+jAt
+jAt
+jAt
+puz
+jAt
+pgP
 aaa
 kmt
 gGM
@@ -171368,14 +171398,14 @@ mWn
 mWn
 okr
 pgP
+fem
+gVl
+jAt
+jAt
+fem
+gVl
+jAt
 pgP
-pgP
-mWz
-pgP
-pgP
-pgP
-wiO
-wiO
 aaa
 kmt
 gGM
@@ -171670,14 +171700,14 @@ kYf
 ueu
 okr
 mWz
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
+jAt
+wtR
+jAt
+jAt
+jAt
+puz
+jAt
+pgP
 aaa
 kmt
 gGM
@@ -171972,14 +172002,14 @@ rkS
 rkS
 okr
 pgP
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
+jAt
+gVl
+vlw
+gVl
+vlw
+gVl
+jAt
+pgP
 aaa
 kmt
 gGM
@@ -172274,14 +172304,14 @@ nys
 qlB
 okr
 pgP
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
+jAt
+jAt
+jAt
+jAt
+jAt
+jAt
+jAt
+pgP
 aaa
 kmt
 gGM
@@ -172576,14 +172606,14 @@ okr
 okr
 okr
 pgP
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
-wiO
+pgP
+pgP
+pgP
+pgP
+pgP
+pgP
+pgP
+pgP
 aaa
 kmt
 gGM
