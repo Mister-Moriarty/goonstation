@@ -54897,7 +54897,22 @@
 /turf/unsimulated/floor/redblack,
 /area/owlery/Owlopen)
 "eiN" = (
-/obj/machinery/light/small/floor,
+/obj/item/device/light/candle/small{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/candle_light{
+	pixel_x = 6;
+	pixel_y = 20
+	},
 /turf/simulated/floor/marble/black,
 /area/vampchapel{
 	force_fullbright = 0
@@ -55209,16 +55224,6 @@
 	},
 /turf/unsimulated/floor,
 /area/centcom/lounge)
-"euW" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/stool/chair/pew/fancy/left,
-/obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/marble/black,
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "evP" = (
 /obj/stool/chair/comfy/shuttle/pilot{
 	dir = 1
@@ -58953,6 +58958,7 @@
 /obj/decal/cleanable/blood{
 	icon_state = "left_bloodygloves_c"
 	},
+/obj/stool,
 /turf/simulated/floor/marble/black,
 /area/vampchapel{
 	force_fullbright = 0
@@ -62056,6 +62062,12 @@
 /obj/decal/cleanable/blood,
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
+"jto" = (
+/obj/stool,
+/turf/simulated/floor/marble/black,
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "jtH" = (
 /obj/stool/chair/office/syndie{
 	dir = 1
@@ -66274,6 +66286,7 @@
 /obj/decal/cleanable/blood{
 	icon_state = "helmetblood_c"
 	},
+/obj/stool,
 /turf/simulated/floor/marble/black,
 /area/vampchapel{
 	force_fullbright = 0
@@ -66463,6 +66476,16 @@
 "mJF" = (
 /turf/unsimulated/wall/auto/lead/blue,
 /area/upper_arctic/pod2)
+"mJK" = (
+/obj/decal/cleanable/blood{
+	icon_state = "left_bloodygloves_c"
+	},
+/obj/decal/cleanable/dirt/jen,
+/obj/stool,
+/turf/simulated/floor/marble/black,
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "mJY" = (
 /obj/machinery/light{
 	dir = 8;
@@ -68526,13 +68549,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
-"odK" = (
-/obj/stool/chair/pew/fancy/right,
-/obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/marble/black,
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "oeb" = (
 /turf/unsimulated/wall/generic{
 	desc = "It's sealed shut.";
@@ -68609,17 +68625,6 @@
 	icon_state = "shore-36"
 	},
 /area/titlescreen)
-"ohL" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/stool/chair/pew/fancy/left{
-	dir = 1
-	},
-/turf/simulated/floor/marble/black,
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "ohW" = (
 /turf/unsimulated/floor/carpet{
 	dir = 1;
@@ -71757,14 +71762,6 @@
 /obj/machinery/microwave,
 /turf/unsimulated/floor/void,
 /area/void_diner)
-"qug" = (
-/obj/stool/chair/pew/fancy/center,
-/turf/simulated/floor/terrazzo/black{
-	explosion_immune = 1
-	},
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "quB" = (
 /obj/decal/nav_danger,
 /obj/cable/yellow{
@@ -75416,14 +75413,6 @@
 	icon_state = "iocrust_edge"
 	},
 /area/iomoon/caves)
-"tgK" = (
-/obj/stool/chair/pew/fancy/right,
-/turf/simulated/floor/terrazzo/black{
-	explosion_immune = 1
-	},
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "tgO" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -76418,17 +76407,6 @@
 	dir = 8
 	},
 /area/upper_arctic/exterior/surface)
-"tYT" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/stool/chair/pew/fancy/right{
-	dir = 1
-	},
-/turf/simulated/floor/marble/black,
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "tZb" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -76665,15 +76643,6 @@
 /obj/geode/crystal/uqill,
 /turf/unsimulated/floor/cave,
 /area/crater/cave/lower)
-"ufD" = (
-/obj/stool/chair/pew/fancy/center,
-/obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/terrazzo/black{
-	explosion_immune = 1
-	},
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "ufO" = (
 /obj/decal/stripe_delivery,
 /mob/living/critter/robotic/gunbot/light,
@@ -77484,6 +77453,17 @@
 /obj/mesh/grille/steel,
 /turf/space,
 /area/watchful_eye_sensor)
+"uLP" = (
+/obj/decoration/ritual{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/simulated/floor/wood/seven{
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "uLU" = (
 /obj/mesh/catwalk{
 	dir = 4
@@ -77727,14 +77707,6 @@
 /obj/mapping_helper/access/lunar_breakdoor,
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
-"uXo" = (
-/obj/stool/chair/pew/fancy/left,
-/turf/simulated/floor/terrazzo/black{
-	explosion_immune = 1
-	},
-/area/vampchapel{
-	force_fullbright = 0
-	})
 "uXu" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -78537,6 +78509,27 @@
 /mob/living/critter/small_animal/firefly/ai_controlled,
 /turf/unsimulated/dirt,
 /area/crypt/graveyard)
+"vtQ" = (
+/obj/item/device/light/candle/small{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = 8;
+	pixel_y = -10
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/obj/candle_light{
+	pixel_x = 4;
+	pixel_y = 13
+	},
+/turf/simulated/floor/marble/black,
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "vuf" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -167138,7 +167131,7 @@ wiO
 pgP
 okr
 nuF
-pOm
+uLP
 pOm
 aIl
 prl
@@ -168043,7 +168036,7 @@ okr
 okr
 xzf
 vSG
-odK
+jFq
 jFq
 jFq
 iTt
@@ -168345,11 +168338,11 @@ kPu
 pVF
 pNm
 tCL
-qug
-eJi
-iTt
+lgJ
+mJK
+jto
 mCx
-ohL
+mxU
 iTt
 wSJ
 okr
@@ -168647,11 +168640,11 @@ ajH
 rev
 pNm
 skM
-uXo
+lgJ
 lgJ
 eiN
 iTt
-tYT
+mxU
 eJi
 ngj
 okr
@@ -169855,11 +169848,11 @@ rCC
 pNm
 jJc
 ueq
-tgK
 lgJ
-eiN
+lgJ
+vtQ
 iTt
-ohL
+mxU
 iTt
 spU
 okr
@@ -170157,11 +170150,11 @@ kPu
 pNm
 pNm
 wVu
-ufD
-iTt
+fko
+jto
 hiu
-iTt
-tYT
+jto
+mxU
 jFq
 dYZ
 okr
@@ -170459,7 +170452,7 @@ okr
 okr
 hab
 jAN
-euW
+pnd
 pnd
 wCZ
 wCZ
