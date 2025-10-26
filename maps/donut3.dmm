@@ -29699,6 +29699,9 @@
 /obj/machinery/door/airlock/pyro/maintenance,
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
+/obj/disposalpipe/segment{
+	dir = 1
+	},
 /turf/simulated/floor/wood/eight{
 	dir = 4
 	},
@@ -41817,6 +41820,14 @@
 /area/station/maintenance/outer/west)
 "mIc" = (
 /obj/disposalpipe/segment/morgue,
+/obj/candle_light{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/jackolantern{
+	pixel_x = -17;
+	pixel_y = 4
+	},
 /turf/simulated/floor/carpet/red/decal/innercross,
 /area/station/crew_quarters/cafeteria)
 "mIg" = (
@@ -63675,6 +63686,10 @@
 	},
 /area/station/solar/west)
 "tpe" = (
+/obj/candle_light{
+	pixel_x = -1;
+	pixel_y = 1
+	},
 /turf/simulated/floor/carpet/red/decal/innercross,
 /area/station/crew_quarters/cafeteria)
 "tpg" = (
