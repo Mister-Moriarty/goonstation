@@ -54796,6 +54796,16 @@
 /area/vampchapel{
 	force_fullbright = 0
 	})
+"egs" = (
+/obj/machinery/light/incandescent/netural{
+	dir = 4
+	},
+/turf/simulated/floor/wood/seven{
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "egw" = (
 /obj/tree,
 /obj/map/light/graveyard,
@@ -57748,6 +57758,16 @@
 /obj/item/paper/book/from_file/pharmacopia,
 /turf/unsimulated/floor/blackwhite,
 /area/owlery/office)
+"gpl" = (
+/obj/reagent_dispensers/beerkeg/wine,
+/obj/decal/cleanable/dirt/jen,
+/obj/machinery/light/small/floor,
+/turf/simulated/floor/wood/five{
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "gpA" = (
 /obj/machinery/optable{
 	name = "Autopsy Table"
@@ -75930,12 +75950,12 @@
 /area/centcom/lobby)
 "tCL" = (
 /obj/decal/stage_edge/dojo,
-/obj/candle_light_2spoopy{
-	pixel_x = 1;
-	pixel_y = 14
-	},
 /obj/table/endtable_gothic,
 /obj/decal/cleanable/dirt/jen,
+/obj/candle_light{
+	pixel_x = 1;
+	pixel_y = 15
+	},
 /turf/simulated/floor/terrazzo/black{
 	explosion_immune = 1
 	},
@@ -80833,6 +80853,20 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/leah)
+"wVu" = (
+/obj/decal/stage_edge/dojo,
+/obj/table/endtable_gothic,
+/obj/decal/cleanable/dirt/jen,
+/obj/candle_light{
+	pixel_x = 1;
+	pixel_y = 16
+	},
+/turf/simulated/floor/terrazzo/black{
+	explosion_immune = 1
+	},
+/area/vampchapel{
+	force_fullbright = 0
+	})
 "wVC" = (
 /obj/machinery/navbeacon/lunar/tour8,
 /turf/unsimulated/floor/plating,
@@ -168023,7 +168057,7 @@ pOm
 pOm
 vqH
 mWO
-qlH
+gpl
 okr
 pgP
 wiO
@@ -170122,7 +170156,7 @@ okr
 kPu
 pNm
 pNm
-tCL
+wVu
 ufD
 iTt
 hiu
@@ -170132,7 +170166,7 @@ jFq
 dYZ
 okr
 tum
-pOm
+egs
 pOm
 gjJ
 pOm
