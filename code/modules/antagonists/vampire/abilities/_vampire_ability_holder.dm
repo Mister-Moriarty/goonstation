@@ -77,6 +77,11 @@
 	points = 99999
 #endif
 
+	/// For other areas of code to work, coven vampires need to use `/datum/abilityHolder/vampire`.
+	var/is_coven_vampire = FALSE
+	/// The vampire coven datum that this ability holder's parent belongs to.
+	var/datum/vampire_coven/coven = null
+
 	// Note: please use mob.get_vampire_blood() & mob.change_vampire_blood() instead of changing the numbers directly.
 
 	// At the time of writing, sight (thermal, x-ray) and chapel checks can be found in human.dm.
@@ -103,19 +108,39 @@
 	//theres a bug where projectiles get unpooled and moved elsewhere before theyre done with their currnent firing
 	//badly affects 'travel' projectile. band aid.
 
+	New(mob/M)
+		// Arguments cannot be passed to ability holders, and antagonist roles are only added to minds after antagonist setup,
+		// so this is the only way to check if a mob is a coven vampire at this point in the code.
+		var/datum/vampire_coven/coven = global.get_singleton(/datum/vampire_coven)
+		if (coven.is_member(M.mind))
+			src.is_coven_vampire = TRUE
+			src.coven = coven
+
+		. = ..()
+
 	onAbilityStat() // In the 'Vampire' tab.
 		..()
-		.= list()
-		.["Blood:"] = round(src.points)
-		.["Total:"] = round(src.vamp_blood)
-		return
+		. = list()
+
+		if (src.is_coven_vampire)
+			var/digits = length("[round(max(src.vamp_blood, src.coven.total_blood))]")
+			.["Blood:"] = "[pad_leading(round(src.points), digits)]/[pad_leading(round(src.vamp_blood), digits)]"
+			.["Coven:"] = "[pad_leading(round(src.coven.blood), digits)]/[pad_leading(round(src.coven.total_blood), digits)]"
+		else
+			.["Blood:"] = round(src.points)
+			.["Total:"] = round(src.vamp_blood)
 
 	onAttach(mob/to_whom)
 		..()
 		RegisterSignal(to_whom, COMSIG_MOB_FLIP, PROC_REF(launch_bat_orbiters))
 		RegisterSignal(to_whom, COMSIG_MOB_POINT, PROC_REF(targeted_bat_orbiters))
-		to_whom.ensure_speech_tree().AddSpeechOutput(SPEECH_OUTPUT_THRALLCHAT_VAMPIRE, subchannel = ref(src))
-		to_whom.ensure_listen_tree().AddListenInput(LISTEN_INPUT_THRALLCHAT, subchannel = ref(src))
+
+		if (src.is_coven_vampire)
+			to_whom.ensure_speech_tree().AddSpeechOutput(SPEECH_OUTPUT_VAMPCHAT)
+			to_whom.ensure_listen_tree().AddListenInput(LISTEN_INPUT_VAMPCHAT)
+		else
+			to_whom.ensure_speech_tree().AddSpeechOutput(SPEECH_OUTPUT_THRALLCHAT_VAMPIRE, subchannel = ref(src))
+			to_whom.ensure_listen_tree().AddListenInput(LISTEN_INPUT_THRALLCHAT, subchannel = ref(src))
 
 	onRemove(mob/from_who)
 		..()
@@ -123,8 +148,12 @@
 		UnregisterSignal(from_who, COMSIG_MOB_POINT)
 
 		if (from_who)
-			from_who.ensure_speech_tree().RemoveSpeechOutput(SPEECH_OUTPUT_THRALLCHAT_VAMPIRE, subchannel = ref(src))
-			from_who.ensure_listen_tree().RemoveListenInput(LISTEN_INPUT_THRALLCHAT, subchannel = ref(src))
+			if (src.is_coven_vampire)
+				from_who.ensure_speech_tree().RemoveSpeechOutput(SPEECH_OUTPUT_VAMPCHAT)
+				from_who.ensure_listen_tree().RemoveListenInput(LISTEN_INPUT_VAMPCHAT)
+			else
+				from_who.ensure_speech_tree().RemoveSpeechOutput(SPEECH_OUTPUT_THRALLCHAT_VAMPIRE, subchannel = ref(src))
+				from_who.ensure_listen_tree().RemoveListenInput(LISTEN_INPUT_THRALLCHAT, subchannel = ref(src))
 
 	onLife(var/mult = 1)
 		..()
@@ -164,6 +193,8 @@
 				src.vamp_blood = 0
 			else
 				src.vamp_blood = max(src.vamp_blood + change, 0)
+				if (src.is_coven_vampire)
+					src.coven.total_blood = max(src.coven.total_blood + change, 0)
 
 		else
 			if (src.points < 0)
@@ -174,6 +205,8 @@
 				src.points = 0
 			else
 				src.points = clamp(src.points + change, 0, src.vamp_blood)
+				if (src.is_coven_vampire)
+					src.coven.blood = clamp(src.coven.blood + change, 0, src.coven.total_blood)
 
 			if (change > 0 && ishuman(src.owner))
 				var/mob/living/carbon/human/H = src.owner
@@ -189,6 +222,10 @@
 
 	proc/check_for_unlocks()
 		if (!src.owner || !ismob(src.owner))
+			return
+
+		// No unlocks for coven vampires.
+		if (src.is_coven_vampire)
 			return
 
 		if (!istype(src, /datum/abilityHolder/vampire))
@@ -246,6 +283,10 @@
 		return
 
 	remove_unlocks()
+		// No unlocks for coven vampires.
+		if (src.is_coven_vampire)
+			return
+
 		src.removeAbility(/datum/targetable/vampire/phaseshift_vampire)
 		src.removeAbility(/datum/targetable/vampire/phaseshift_vampire/mk2)
 		src.removeAbility(/datum/targetable/vampire/mark_coffin)
@@ -260,6 +301,10 @@
 		src.updateButtons()
 
 	proc/make_thrall(var/mob/victim)
+		// No thralls for coven vampires.
+		if (src.is_coven_vampire)
+			return
+
 		if (ishuman(victim))
 
 			var/mob/living/carbon/human/M = victim
@@ -391,7 +436,7 @@
 			boutput(M, SPAN_ALERT("You can't use this ability when restrained!"))
 			return 0
 
-		if (istype(get_area(M), /area/station/chapel) && M.check_vampire_power(3) != 1 && !(M.job == "Chaplain"))
+		if (istype(get_area(M), /area/station/chapel) && (M.check_vampire_power(3) != 1) && !(M.job == "Chaplain") && !global.chapel_desecrated)
 			boutput(M, SPAN_ALERT("Your powers do not work in this holy place!"))
 			return 0
 
