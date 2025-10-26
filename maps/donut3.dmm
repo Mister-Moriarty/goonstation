@@ -53336,6 +53336,12 @@
 /obj/cable,
 /turf/simulated/floor/plating,
 /area/station/security/checkpoint/escape)
+"qhB" = (
+/obj/machinery/camera/directional/north,
+/turf/simulated/floor/wood/eight{
+	dir = 4
+	},
+/area/station/crew_quarters/cafeteria)
 "qhK" = (
 /obj/disposalpipe/segment/ejection{
 	dir = 8
@@ -53590,6 +53596,14 @@
 /obj/machinery/light/incandescent/cool,
 /turf/simulated/floor/darkblue/checker,
 /area/station/ai_monitored/storage/eva)
+"qmK" = (
+/obj/machinery/camera/directional/south{
+	pixel_x = -10
+	},
+/turf/simulated/floor/wood/eight{
+	dir = 4
+	},
+/area/station/crew_quarters/cafeteria)
 "qmW" = (
 /obj/table/reinforced/auto,
 /obj/item/storage/firstaid/fire{
@@ -120916,7 +120930,7 @@ upq
 yab
 qRx
 nNm
-jKb
+qhB
 rnx
 gHq
 lRw
@@ -122735,7 +122749,7 @@ lRw
 hWx
 lRw
 bFI
-jKb
+qmK
 nNm
 qKD
 muE
@@ -125709,10 +125723,10 @@ rdj
 rdj
 rdj
 rdj
-aUm
-aUm
-aUm
-aUm
+kkV
+kkV
+kkV
+kkV
 kkV
 kvH
 oHX
@@ -126010,8 +126024,8 @@ rdj
 rdj
 rdj
 rdj
-aUm
-aUm
+kkV
+kkV
 fWM
 huC
 huC
@@ -126310,10 +126324,10 @@ rdj
 rdj
 rdj
 rdj
-aUm
-aUm
-aUm
-aUm
+kkV
+kkV
+kkV
+kkV
 ofw
 ofw
 aRI
@@ -126611,8 +126625,8 @@ aUm
 aUm
 aUm
 aUm
-aUm
-aUm
+kkV
+kkV
 dwQ
 bzZ
 kkV
@@ -127215,8 +127229,8 @@ aUm
 aUm
 aUm
 aUm
-aUm
-aUm
+kkV
+kkV
 btm
 kkV
 kkV
